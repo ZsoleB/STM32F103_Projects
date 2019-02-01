@@ -1,0 +1,6 @@
+GPIO_Driver.c:12:6:GPIO_Driver_Init	24	static
+GPIO_Driver.c:60:6:GPIO_Driver_SetPin	16	static
+GPIO_Driver.c:66:6:GPIO_Driver_ClearPin	16	static
+GPIO_Driver.c:72:8:GPIO_Driver_ReadInputData	24	static
+GPIO_Driver.c:80:7:GPIO_Driver_ReadInputDataBit	24	static
+GPIO_Driver.c:91:8:GPIO_Driver_ReadOutputData	24	static

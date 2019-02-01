@@ -1,0 +1,8 @@
+ADC_Driver.c:10:6:ADC_Driver_Init	24	static
+ADC_Driver.c:114:8:ADC_Driver_GetSample	24	static
+ADC_Driver.c:121:7:ADC_Driver_GetStatus	16	static
+ADC_Driver.c:133:6:ADC_Driver_ClearStatus	16	static
+ADC_Driver.c:138:6:ADC_Driver_Off	16	static
+ADC_Driver.c:143:6:ADC_Driver_On	16	static
+ADC_Driver.c:148:6:ADC_Driver_StartSampling	16	static
+ADC_Driver.c:154:7:ADC_Driver_SetChannel	16	static

@@ -1,0 +1,15 @@
+CAN_Driver.c:49:6:CAN_Driver_DebugFreeze	16	static
+CAN_Driver.c:58:6:CAN_Driver_Enter_NormalMode	16	static
+CAN_Driver.c:67:6:CAN_Driver_Enter_SleepMode	16	static
+CAN_Driver.c:80:6:CAN_Driver_Init	16	static
+CAN_Driver.c:160:6:CAN_Driver_InitTxPayload	24	static
+CAN_Driver.c:170:6:CAN_Driver_Enter_InitMode	16	static
+CAN_Driver.c:183:6:CAN_Driver_ModeChange	16	static
+CAN_Driver.c:188:6:CAN_Driver_ReceiveMessage	16	static
+CAN_Driver.c:231:6:CAN_Driver_Reset	16	static
+CAN_Driver.c:237:6:CAN_Driver_SendMessage	16	static
+CAN_Driver.c:289:6:CAN_Driver_SetFilter	24	static
+CAN_Driver.c:338:6:CAN_Driver_SetTestMode	16	static
+CAN_Driver.c:355:6:CAN_Driver_Start	16	static
+CAN_Driver.c:360:6:CAN_Driver_Wait_for_Ready	16	static
+CAN_Driver.c:376:6:CAN_Driver_Wake_Up	16	static

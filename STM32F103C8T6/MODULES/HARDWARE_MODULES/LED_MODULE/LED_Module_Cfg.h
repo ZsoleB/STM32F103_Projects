@@ -1,0 +1,30 @@
+/*
+ * LED_Module_Cfg.h
+ *
+ *  Created on: Sep 5, 2018
+ *      Author: zsolt.balo
+ */
+
+#ifndef MODULES_HARDWARE_MODULES_LED_MODULE_LED_MODULE_CFG_H_
+#define MODULES_HARDWARE_MODULES_LED_MODULE_LED_MODULE_CFG_H_
+
+#include "LED_Module.h"
+
+#define LED_MODULE_INSTANCE_NUM 					((uint32)0x0A)
+
+typedef enum
+{
+	LED_MODULE_0,
+	LED_MODULE_1,
+	LED_MODULE_2,
+	LED_MODULE_3,
+	LED_MODULE_4,
+	LED_MODULE_5,
+	LED_MODULE_6,
+	LED_MODULE_7,
+	LED_MODULE_8,
+	LED_MODULE_9
+}
+LED_Module_Instances;
+
+#endif /* MODULES_HARDWARE_MODULES_LED_MODULE_LED_MODULE_CFG_H_ */

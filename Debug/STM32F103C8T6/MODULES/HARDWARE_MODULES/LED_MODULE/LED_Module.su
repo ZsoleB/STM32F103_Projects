@@ -1,0 +1,3 @@
+LED_Module.c:10:6:LED_Module_Set_On	16	static
+LED_Module.c:15:6:LED_Module_Set_Off	16	static
+LED_Module.c:20:6:LED_Module_Set_Dimming	16	static

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.atollic.truestudio.exe.debug.2051384318">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.2051384318" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.2051384318" name="Debug" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.2051384318." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.1267660736" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<option id="com.atollic.truestudio.general.runtimelib.11413500" name="Runtime Library" superClass="com.atollic.truestudio.general.runtimelib" useByScannerDiscovery="false" value="com.atollic.truestudio.ld.general.clib.small" valueType="enumerated"/>
+							<option id="com.atollic.truestudio.toolchain_options.mcu.439620126" name="Microcontroller" superClass="com.atollic.truestudio.toolchain_options.mcu" useByScannerDiscovery="false" value="STM32F103C8" valueType="string"/>
+							<option id="com.atollic.truestudio.toolchain_options.vendor.245805340" name="Vendor name" superClass="com.atollic.truestudio.toolchain_options.vendor" useByScannerDiscovery="false" value="STMicroelectronics" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.1064465634" isAbstract="false" name="Debug platform" osList="all" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/103_GPIO_Project}/Debug" customBuilderProperties="toolChainpathType=1|toolChainpathString=C:\\Program Files (x86)\\Atollic\\TrueSTUDIO for ARM 8.1.0\\ARMTools\\bin|" id="com.atollic.truestudio.mbs.builder1.348211369" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.271096283" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1025004433" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" useByScannerDiscovery="false"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.455310963" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" useByScannerDiscovery="false" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1088652067" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.1742929056" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.699008514" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" useByScannerDiscovery="false"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.629232457" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.as.general.incpath.1647566945" name="Include path" superClass="com.atollic.truestudio.as.general.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Device/ST/STM32F10x/Include"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="/103_EXTI_Project/STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTICK_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/INT_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/DMA_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/EXTI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWCRC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWENCODER_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/PWM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/RTC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SPI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTEM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/TWI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/USB_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/WDG_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/LEVEL_INDICATOR_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/SEVEN_SEGMENT_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE/JOYSTICK_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/SHIFT_REGISTER_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
+								</option>
+								<inputType id="com.atollic.truestudio.as.input.651518023" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.156473070" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.79222555" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gcc.directories.select.1374537474" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Device/ST/STM32F10x/Include"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/GPIO_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/ADC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/USART_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/TIM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTICK_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/DMA_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/EXTI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWCRC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWENCODER_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/PWM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/RTC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SPI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTEM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/TWI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/USB_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/WDG_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/LEVEL_INDICATOR_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/SEVEN_SEGMENT_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE/JOYSTICK_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/SHIFT_REGISTER_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1515644627" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" useByScannerDiscovery="false"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1916507793" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" useByScannerDiscovery="false" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1050280875" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.626828260" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1724219893" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" useByScannerDiscovery="false"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.1305163486" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.1679664144" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<inputType id="com.atollic.truestudio.gcc.input.1673373655" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.362701785" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1586898384" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" useByScannerDiscovery="false"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1888324658" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" useByScannerDiscovery="false" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1393846273" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.346005914" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" useByScannerDiscovery="false" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.178784972" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu" useByScannerDiscovery="false"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1168736538" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" useByScannerDiscovery="false" value="../stm32_flash.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.552843492" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<inputType id="com.atollic.truestudio.ld.input.274847294" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.462501031" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.17483397" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gpp.directories.select.1105004619" name="Include path" superClass="com.atollic.truestudio.gpp.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Device/ST/STM32F10x/Include"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1677747459" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.43435236" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.900592998" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.1646974738" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.483214504" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.1498523448" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.888251549" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.1335259080" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.930811418" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.1479919119" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.660201900" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.771260781" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1835997868" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.688128380" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1458136429" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.2035960786" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.152718322" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="../stm32_flash.ld" valueType="string"/>
+							</tool>
+							<tool id="com.atollic.truestudio.ar.base.300242155" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.835855711" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="com.atollic.truestudio.exe.debug.2051384318.1839262579" name="/" resourcePath="STM32F103C8T6">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.2092911821" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain" unusedChildren="">
+							<option id="com.atollic.truestudio.general.runtimelib.11413500.1529061145" name="Runtime Library" superClass="com.atollic.truestudio.general.runtimelib.11413500"/>
+							<option id="com.atollic.truestudio.toolchain_options.mcu.439620126.1441352912" name="Microcontroller" superClass="com.atollic.truestudio.toolchain_options.mcu.439620126"/>
+							<option id="com.atollic.truestudio.toolchain_options.vendor.245805340.1132377313" name="Vendor name" superClass="com.atollic.truestudio.toolchain_options.vendor.245805340"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform" isAbstract="false" name="Debug platform" osList="all" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.1986034064" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as.271096283">
+								<inputType id="com.atollic.truestudio.as.input.1354156463" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.748365608" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.156473070">
+								<option id="com.atollic.truestudio.gcc.directories.select.822029864" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Device/ST/STM32F10x/Include"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/GPIO_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/ADC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/USART_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/TIM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTICK_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/DMA_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/EXTI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWCRC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWENCODER_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/PWM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/RTC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SPI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTEM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/TWI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/USB_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/WDG_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/LEVEL_INDICATOR_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/SEVEN_SEGMENT_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE/JOYSTICK_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/SHIFT_REGISTER_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
+								</option>
+								<inputType id="com.atollic.truestudio.gcc.input.740561461" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1669630037" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld.362701785"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.1534516623" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp.462501031"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.1347079028" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc.1479919119"/>
+							<tool id="com.atollic.truestudio.ar.base.511248259" name="Archiver" superClass="com.atollic.truestudio.ar.base.300242155"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.256169537" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput.835855711"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Libraries"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="STM32F103C8T6"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.atollic.truestudio.configuration.release.607746550">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.configuration.release.607746550" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.configuration.release.607746550" name="Release" parent="com.atollic.truestudio.configuration.release">
+					<folderInfo id="com.atollic.truestudio.configuration.release.607746550." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.release.toolchain.421930191" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.release.toolchain">
+							<option id="com.atollic.truestudio.general.runtimelib.2029338000" name="Runtime Library" superClass="com.atollic.truestudio.general.runtimelib" value="com.atollic.truestudio.ld.general.clib.small" valueType="enumerated"/>
+							<option id="com.atollic.truestudio.toolchain_options.mcu.1347882385" name="Microcontroller" superClass="com.atollic.truestudio.toolchain_options.mcu" value="STM32F103C8" valueType="string"/>
+							<option id="com.atollic.truestudio.toolchain_options.vendor.1246238202" name="Vendor name" superClass="com.atollic.truestudio.toolchain_options.vendor" value="STMicroelectronics" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.release.toolchain.platform.104667836" isAbstract="false" name="release platform" superClass="com.atollic.truestudio.exe.release.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/103_GPIO_Project}/Release" id="com.atollic.truestudio.mbs.builder1.282813191" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1"/>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.as.1886314102" name="Assembler" superClass="com.atollic.truestudio.exe.release.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.618940129" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.898778130" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1501881343" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.1802432991" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.69679323" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.841711365" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.as.general.incpath.1759547635" name="Include path" superClass="com.atollic.truestudio.as.general.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Device/ST/STM32F10x/Include"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="/103_EXTI_Project/STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTICK_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/INT_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/DMA_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/EXTI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWCRC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWENCODER_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/PWM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/RTC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SPI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTEM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/TWI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/USB_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/WDG_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/LEVEL_INDICATOR_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/SEVEN_SEGMENT_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE/JOYSTICK_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/SHIFT_REGISTER_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
+								</option>
+								<inputType id="com.atollic.truestudio.as.input.491654717" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.gcc.786294102" name="C Compiler" superClass="com.atollic.truestudio.exe.release.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.509124390" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gcc.directories.select.1877415595" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Device/ST/STM32F10x/Include"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="/103_EXTI_Project/STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTICK_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/INT_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/CAN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/DMA_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/EXTI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWCRC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWENCODER_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/PWM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/RTC_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SPI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SYSTEM_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/TWI_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/USB_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/WDG_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/LEVEL_INDICATOR_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/SEVEN_SEGMENT_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE/JOYSTICK_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/SHIFT_REGISTER_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.42657192" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1998652506" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1832040963" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.687562405" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.19854611" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.1968930838" name="Prepare dead code removal " superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.278375750" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<inputType id="com.atollic.truestudio.gcc.input.1233095261" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.ld.1599832674" name="C Linker" superClass="com.atollic.truestudio.exe.release.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.2010550015" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.2058394978" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.911932910" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.873971150" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.821100709" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1545957459" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="../stm32_flash.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1910808254" name="Dead code removal " superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<inputType id="com.atollic.truestudio.ld.input.389010742" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.gpp.97300195" name="C++ Compiler" superClass="com.atollic.truestudio.exe.release.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1543966475" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F10X_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gpp.directories.select.1398587524" name="Include path" superClass="com.atollic.truestudio.gpp.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="../Libraries/STM32F10x_StdPeriph_Driver/inc"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Device/ST/STM32F10x/Include"/>
+									<listOptionValue builtIn="false" value="../Libraries/CMSIS/Include"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.259096255" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1100070495" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1700305674" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.875972154" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1041799155" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.1160365151" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.932726600" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.1893376200" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.73598896" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.ldcc.543139998" name="C++ Linker" superClass="com.atollic.truestudio.exe.release.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.876677961" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.860815435" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1038983954" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpucore.159967457" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.None" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1885275312" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.219751131" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.113097982" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="../stm32_flash.ld" valueType="string"/>
+							</tool>
+							<tool id="com.atollic.truestudio.ar.base.722964083" name="Archiver" superClass="com.atollic.truestudio.ar.base"/>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.secoutput.1618481950" name="Other" superClass="com.atollic.truestudio.exe.release.toolchain.secoutput"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Libraries"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="103_GPIO_Project.com.atollic.truestudio.exe.1432330463" name="Executable" projectType="com.atollic.truestudio.exe"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/103_GPIO_Project"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/103_GPIO_Project"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2051384318;com.atollic.truestudio.exe.debug.2051384318.;com.atollic.truestudio.exe.debug.toolchain.gcc.156473070;com.atollic.truestudio.gcc.input.1673373655">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.configuration.release.607746550;com.atollic.truestudio.configuration.release.607746550.;com.atollic.truestudio.exe.release.toolchain.gcc.786294102;com.atollic.truestudio.gcc.input.1233095261">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

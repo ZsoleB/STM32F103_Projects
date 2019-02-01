@@ -1,0 +1,8 @@
+USART_Driver.c:10:6:USART_Driver_Init	24	static
+USART_Driver.c:46:7:USART_Driver_Set_Baudrate	32	static
+USART_Driver.c:78:7:USART_Driver_Receive_Char	24	static
+USART_Driver.c:86:6:USART_Driver_Send_Char	16	static
+USART_Driver.c:92:6:USART_Driver_Send_Str	24	static
+USART_Driver.c:102:6:USART_Driver_Start	16	static
+USART_Driver.c:107:6:USART_Driver_Stop	16	static
+USART_Driver.c:112:7:USART_Driver_GetStatus	16	static

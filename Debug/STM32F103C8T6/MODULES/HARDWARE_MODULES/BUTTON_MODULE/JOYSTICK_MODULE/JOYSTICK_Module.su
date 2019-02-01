@@ -1,0 +1,4 @@
+JOYSTICK_Module.c:10:7:JOYSTICK_Module_Pressed	24	static
+JOYSTICK_Module.c:17:6:JOYSTICK_Dirrection_Measurement	24	static
+JOYSTICK_Module.c:30:7:JOYSTICK_Get_X_Value	16	static
+JOYSTICK_Module.c:36:7:JOYSTICK_Get_Y_Value	16	static

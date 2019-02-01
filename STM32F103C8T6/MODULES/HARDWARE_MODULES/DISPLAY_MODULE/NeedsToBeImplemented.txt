@@ -1,0 +1,7 @@
+Generic interfaces for Displays:
+* SetCharater
+* SetString
+* SetOffset
+* SetPixel
+* SetForm
+etc.

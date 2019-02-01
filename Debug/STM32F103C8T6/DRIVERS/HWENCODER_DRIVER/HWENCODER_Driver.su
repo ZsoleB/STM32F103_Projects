@@ -1,0 +1,2 @@
+HWENCODER_Driver.c:10:6:HWENCODER_Driver_Init	16	static
+HWENCODER_Driver.c:32:8:HWENCODER_Driver_Get_Count_Value	16	static

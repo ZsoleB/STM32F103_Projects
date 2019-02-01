@@ -1,0 +1,3 @@
+SEVEN_SEGMENT_Module.c:64:6:SEVEN_SEGMENT_Module_Update_Display	24	static
+SEVEN_SEGMENT_Module.c:108:6:SEVEN_SEGMENT_Module_Clear	16	static
+SEVEN_SEGMENT_Module.c:134:7:SEVEN_SEGMENT_Module_Set_Dimming	16	static

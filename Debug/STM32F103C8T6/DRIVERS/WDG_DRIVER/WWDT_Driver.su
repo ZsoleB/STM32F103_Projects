@@ -1,0 +1,4 @@
+WWDT_Driver.c:42:6:WWDT_Driver_Init	4	static
+WWDT_Driver.c:64:6:WWDT_Driver_Refresh_WWDT_Counter	4	static
+WWDT_Driver.c:69:6:WWDT_Driver_SW_Reset	4	static
+WWDT_Driver.c:75:6:WWDT_Driver_Clear_Interrupt_Flag	4	static

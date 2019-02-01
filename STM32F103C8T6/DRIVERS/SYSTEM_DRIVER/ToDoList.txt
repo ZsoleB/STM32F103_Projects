@@ -1,0 +1,9 @@
+System Driver Functionalites:
+
+* Set the system clock
+* Reset functionalities
+* Sleep-Power Up state setting (or others depending on the MCU)
+< 
+-Extra functionalites:
+ [Low Power Indicators] 
+ >

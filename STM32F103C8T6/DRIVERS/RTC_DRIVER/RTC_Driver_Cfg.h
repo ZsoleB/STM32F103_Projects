@@ -1,0 +1,29 @@
+/*
+ * RTC_Driver_Cfg.h
+ *
+ *  Created on: Oct 26, 2018
+ *      Author: zsolt.balo
+ */
+
+#ifndef DRIVERS_RTC_DRIVER_RTC_DRIVER_CFG_H_
+#define DRIVERS_RTC_DRIVER_RTC_DRIVER_CFG_H_
+
+#include "RTC_Driver.h"
+
+#define RTC_DRIVER_CLK_SOURCE								RTC_DRIVER_LSE_CLK
+#define RTC_DRIVER_USE_LSE									OK
+#define RTC_DRIVER_INTERRUPT_ENABLE							NOK
+
+#if(RTC_DRIVER_INTERRUPT_ENABLE == OK)
+	#include "NVIC_Driver.h"
+
+	#define RTC_DRIVER_SELECTED_INTERRUPT					RTC_DRIVER_SECOND_INTERRUPT_ENABLE
+	#define RTC_DRIVER_SELECTED_PRIORITY_GRUP				NVIC_DRIVER_PRIORITY_GRUP_3
+	#define RTC_DRIVER_SELECTED_PREEMPTION_PRIORITY			((uint8)0x01)
+	#define RTC_DRIVER_SELECTED_SUB_PRIORITY				((uint8)0x01)
+
+#endif
+
+void RTC_Driver_Callback_Function();
+
+#endif /* DRIVERS_RTC_DRIVER_RTC_DRIVER_CFG_H_ */

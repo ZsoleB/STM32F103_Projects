@@ -1,0 +1,6 @@
+GPIO_Driver_STM32F103.c:12:6:GPIO_Driver_Init	24	static
+GPIO_Driver_STM32F103.c:63:6:GPIO_Driver_SetPin	16	static
+GPIO_Driver_STM32F103.c:69:6:GPIO_Driver_ClearPin	16	static
+GPIO_Driver_STM32F103.c:75:8:GPIO_Driver_ReadInputData	24	static
+GPIO_Driver_STM32F103.c:83:7:GPIO_Driver_ReadInputDataBit	24	static
+GPIO_Driver_STM32F103.c:94:8:GPIO_Driver_ReadOutputData	24	static

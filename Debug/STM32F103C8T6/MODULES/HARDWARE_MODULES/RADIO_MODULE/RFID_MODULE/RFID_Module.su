@@ -1,0 +1,17 @@
+RFID_Module.c:10:6:TM_MFRC522_Init	8	static
+RFID_Module.c:28:21:RFID_Module_MFRC522_Check	24	static
+RFID_Module.c:42:21:RFID_Module_MFRC522_Compare	24	static
+RFID_Module.c:52:21:TM_MFRC522_Request	32	static
+RFID_Module.c:68:21:TM_MFRC522_Anticoll	32	static
+RFID_Module.c:92:6:TM_MFRC522_Halt	24	static
+RFID_Module.c:103:6:TM_MFRC522_WriteRegister	16	static
+RFID_Module.c:114:9:TM_MFRC522_ReadRegister	24	static
+RFID_Module.c:128:6:TM_MFRC522_SetBitMask	16	static
+RFID_Module.c:132:6:TM_MFRC522_ClearBitMask	16	static
+RFID_Module.c:136:6:TM_MFRC522_Reset	8	static
+RFID_Module.c:140:6:TM_MFRC522_AntennaOn	16	static
+RFID_Module.c:148:6:TM_MFRC522_AntennaOff	8	static
+RFID_Module.c:153:21:TM_MFRC522_ToCard	40	static
+RFID_Module.c:240:6:TM_MFRC522_CalculateCRC	40	static
+RFID_Module.c:265:21:TM_MFRC522_Check	24	static
+RFID_Module.c:279:21:TM_MFRC522_Compare	24	static
