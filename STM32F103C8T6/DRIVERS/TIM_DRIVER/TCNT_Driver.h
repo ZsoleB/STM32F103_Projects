@@ -27,11 +27,25 @@
 #define TCNT_DRIVER_COUNTER_ENABLE										((uint8)(0x01))
 #define TCNT_DRIVER_COUNTER_DISABLE										((uint8)(0x00))
 
-void TCNT_Driver_Init(TIM_TypeDef* TIMx);
-void TCNT_Driver_SetPeriod(TIM_TypeDef* TIMx,uint32 PeriodValue);
-void TCNT_Driver_SetPrescale(TIM_TypeDef* TIMx,uint32 PrescaleValue);
-void TCNT_Driver_ClearStatus(TIM_TypeDef* TIMx);
-uint8 TCNT_Driver_GetStatus(TIM_TypeDef* TIMx,uint8 Event);
-void TCNT_Driver_Start(TIM_TypeDef* TIMx);
+typedef void (*TCNT_Driver_callback_type)();
+
+typedef struct
+{
+	TIM_TypeDef* Timer;
+	uint8 TimerDirection;
+	uint32 TimerPrescaler;
+	uint32 TimerPeriod;
+
+}TCNT_Driver_Setup_Type;
+
+extern TCNT_Driver_Setup_Type* TCNT_SETUP;
+
+void TCNT_Driver_Init();
+void TCNT_Driver_SetPeriod(uint8 TCNT_setup_nr,uint32 PeriodValue);
+void TCNT_Driver_SetPrescale(uint8 TCNT_setup_nr,uint32 PrescaleValue);
+void TCNT_Setup_Callbacks();
+void TCNT_Driver_ClearStatus(uint8 TCNT_setup_nr);
+uint8 TCNT_Driver_GetStatus(uint8 TCNT_setup_nr,uint8 Event);
+void TCNT_Driver_Start(uint8 TCNT_setup_nr);
 
 #endif /* DRIVERS_TIM_DRIVER_TCNT_DRIVER_H_ */

@@ -9,15 +9,10 @@
 #define PWM_DRIVER_H_
 
 #include "stm32f10x.h"
-#include "TCNT_Driver_Cfg.h"
 #include "StdTypes.h"
 
 #define PWM_DRIVER_ACTIVE_HIGH 							((uint8)0x00)
 #define PWM_DRIVER_ACTIVE_LOW							((uint8)0x01)
-#define PWM_DRIVER_CC_1 								((uint8)0x01)
-#define PWM_DRIVER_CC_2 								((uint8)0x02)
-#define PWM_DRIVER_CC_3 								((uint8)0x03)
-#define PWM_DRIVER_CC_4 								((uint8)0x04)
 
 /*
  In upcounting, channel 1 is active as long as TIMx_CNT<TIMx_CCR1
@@ -33,8 +28,27 @@ inactive.
 */
 #define PWM_DRIVER_PWM_MODE_2 							((uint8)0x07)
 
-void PWM_Driver_Init(TIM_TypeDef *TIMx);
-void PWM_Driver_SetDutyCylce(TIM_TypeDef *TIMx, uint32 DutyCycle);
-void PWM_Driver_SetPeriod(TIM_TypeDef *TIMx,uint32 Period);
+typedef enum
+{
+	PWM_Driver_Channel_1,
+	PWM_Driver_Channel_2,
+	PWM_Driver_Channel_3,
+	PWM_Driver_Channel_4
+}PWM_Driver_Channels;
+
+typedef struct
+{
+	TIM_TypeDef* PWM_Timer;
+	PWM_Driver_Channels PWM_Channel;
+	uint8 PWM_Mode;
+	uint8 PWM_Output_compare_preload_enable;
+	uint8 PWM_polarity;
+	uint8 PWM_Capture_compare_enable;
+}PWM_Driver_Setup_Type;
+
+extern PWM_Driver_Setup_Type* PWM_SETUP;
+
+void PWM_Driver_Init();
+void PWM_Driver_SetDutyCylce(uint8 PWM_setup_nr, uint8 DutyCycle);
 
 #endif /* PWM_DRIVER_H_ */

@@ -1,3 +1,3 @@
-RTC_Driver.c:11:6:RTC_Driver_Init	4	static
-RTC_Driver.c:63:7:RTC_Driver_Read_SecondStatus	4	static
-RTC_Driver.c:78:6:RTC_Driver_Synchronize	4	static
+RTC_Driver.c:10:6:RTC_Driver_Init	4	static
+RTC_Driver.c:62:7:RTC_Driver_Read_SecondStatus	4	static
+RTC_Driver.c:77:6:RTC_Driver_Synchronize	4	static

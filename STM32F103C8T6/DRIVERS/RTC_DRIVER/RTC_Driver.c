@@ -6,7 +6,6 @@
  */
 
 #include "RTC_Driver_Cfg.h"
-#include "GPIO_Driver_Cfg.h"
 
 void RTC_Driver_Init()
 {

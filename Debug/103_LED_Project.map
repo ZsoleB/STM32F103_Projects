@@ -1281,7 +1281,7 @@ Discarded input sections
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .text.ADC_Driver_Init
-                0x00000000      0x484 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+                0x00000000      0x4dc STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .text.ADC_Driver_GetSample
                 0x00000000       0x34 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .text.ADC_Driver_GetStatus
@@ -1295,13 +1295,13 @@ Discarded input sections
  .text.ADC_Driver_StartSampling
                 0x00000000       0x44 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .text.ADC_Driver_SetChannel
-                0x00000000       0x1a STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+                0x00000000       0x4c STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .debug_info    0x00000000      0x4aa STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .debug_abbrev  0x00000000      0x139 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .debug_aranges
                 0x00000000       0x58 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .debug_ranges  0x00000000       0x48 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
- .debug_line    0x00000000      0x2b5 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_line    0x00000000      0x2ba STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .debug_str     0x00000000      0x45e STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .debug_frame   0x00000000      0x154 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
@@ -1375,33 +1375,49 @@ Discarded input sections
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .text.DMA_Driver_Init
-                0x00000000       0x8c STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+                0x00000000      0x268 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .text.DMA_Driver_SetBuffers
-                0x00000000       0x28 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+                0x00000000       0x50 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .text.DMA_Driver_Start
-                0x00000000       0x24 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+                0x00000000       0x44 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .text.DMA_Driver_Stop
-                0x00000000       0x24 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
- .debug_info    0x00000000      0x26b STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
- .debug_abbrev  0x00000000       0xe2 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+                0x00000000       0x44 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+ .debug_info    0x00000000      0x31e STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+ .debug_abbrev  0x00000000      0x10b STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .debug_aranges
                 0x00000000       0x38 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .debug_ranges  0x00000000       0x28 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
- .debug_line    0x00000000      0x205 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
- .debug_str     0x00000000      0x2d6 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+ .debug_line    0x00000000      0x2b0 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+ .debug_str     0x00000000      0x411 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
- .debug_frame   0x00000000       0xac STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+ .debug_frame   0x00000000       0xb0 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
  .ARM.attributes
                 0x00000000       0x33 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+ .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .data.DMA_CONF_SETUP
+                0x00000000       0x18 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .data.DMA_SETUP
+                0x00000000        0x4 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .debug_info    0x00000000      0x1e9 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .debug_abbrev  0x00000000       0xe9 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .debug_aranges
+                0x00000000       0x18 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .debug_line    0x00000000      0x1c3 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .debug_str     0x00000000      0x35f STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+ .ARM.attributes
+                0x00000000       0x33 STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\DRIVERS.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\DRIVERS.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\DRIVERS.o
- .debug_info    0x00000000      0x1b6 STM32F103C8T6\DRIVERS\DRIVERS.o
- .debug_abbrev  0x00000000       0xcb STM32F103C8T6\DRIVERS\DRIVERS.o
+ .debug_info    0x00000000      0x491 STM32F103C8T6\DRIVERS\DRIVERS.o
+ .debug_abbrev  0x00000000       0xe3 STM32F103C8T6\DRIVERS\DRIVERS.o
  .debug_aranges
                 0x00000000       0x18 STM32F103C8T6\DRIVERS\DRIVERS.o
- .debug_line    0x00000000      0x1b1 STM32F103C8T6\DRIVERS\DRIVERS.o
- .debug_str     0x00000000      0x271 STM32F103C8T6\DRIVERS\DRIVERS.o
+ .debug_line    0x00000000      0x1e5 STM32F103C8T6\DRIVERS\DRIVERS.o
+ .debug_str     0x00000000      0x48b STM32F103C8T6\DRIVERS\DRIVERS.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\DRIVERS.o
  .ARM.attributes
                 0x00000000       0x33 STM32F103C8T6\DRIVERS\DRIVERS.o
@@ -1474,13 +1490,13 @@ Discarded input sections
                 0x00000000       0x4e STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
  .text.HWENCODER_Driver_Get_Count_Value
                 0x00000000       0x18 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
- .debug_info    0x00000000      0x341 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
- .debug_abbrev  0x00000000       0xe4 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
+ .debug_info    0x00000000      0x3ac STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
+ .debug_abbrev  0x00000000      0x100 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
  .debug_aranges
                 0x00000000       0x28 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
  .debug_ranges  0x00000000       0x18 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
- .debug_line    0x00000000      0x1e2 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
- .debug_str     0x00000000      0x36a STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
+ .debug_line    0x00000000      0x217 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
+ .debug_str     0x00000000      0x3ce STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
  .debug_frame   0x00000000       0x60 STM32F103C8T6\DRIVERS\HWENCODER_DRIVER\HWENCODER_Driver.o
  .ARM.attributes
@@ -1540,22 +1556,36 @@ Discarded input sections
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
  .text.PWM_Driver_Init
-                0x00000000       0x32 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+                0x00000000      0x378 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
  .text.PWM_Driver_SetDutyCylce
-                0x00000000       0x44 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
- .text.PWM_Driver_SetPeriod
-                0x00000000       0x1e STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
- .debug_info    0x00000000      0x393 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
- .debug_abbrev  0x00000000       0xfc STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+                0x00000000      0x164 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+ .debug_info    0x00000000      0x3fe STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+ .debug_abbrev  0x00000000      0x123 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
  .debug_aranges
-                0x00000000       0x30 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
- .debug_ranges  0x00000000       0x20 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
- .debug_line    0x00000000      0x1ed STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
- .debug_str     0x00000000      0x387 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+                0x00000000       0x28 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+ .debug_ranges  0x00000000       0x18 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+ .debug_line    0x00000000      0x227 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+ .debug_str     0x00000000      0x46a STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
- .debug_frame   0x00000000       0x84 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+ .debug_frame   0x00000000       0x68 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
  .ARM.attributes
                 0x00000000       0x33 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+ .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .data.PWM_CONF_SETUP
+                0x00000000        0xc STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .data.PWM_SETUP
+                0x00000000        0x4 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .debug_info    0x00000000      0x3d2 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .debug_abbrev  0x00000000      0x101 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .debug_aranges
+                0x00000000       0x18 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .debug_line    0x00000000      0x1c3 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .debug_str     0x00000000      0x438 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+ .ARM.attributes
+                0x00000000       0x33 STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
@@ -1565,13 +1595,13 @@ Discarded input sections
                 0x00000000       0x34 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .text.RTC_Driver_Synchronize
                 0x00000000       0x20 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
- .debug_info    0x00000000      0x419 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
- .debug_abbrev  0x00000000      0x11a STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
+ .debug_info    0x00000000      0x331 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
+ .debug_abbrev  0x00000000       0xec STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .debug_aranges
                 0x00000000       0x30 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .debug_ranges  0x00000000       0x20 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
- .debug_line    0x00000000      0x255 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
- .debug_str     0x00000000      0x3ef STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
+ .debug_line    0x00000000      0x21f STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
+ .debug_str     0x00000000      0x37b STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .debug_frame   0x00000000       0x70 STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
  .ARM.attributes
@@ -1635,28 +1665,44 @@ Discarded input sections
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
  .text.TCNT_Driver_Init
-                0x00000000       0x3c STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+                0x00000000       0xa8 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
  .text.TCNT_Driver_SetPeriod
-                0x00000000       0x1c STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .text.TCNT_Driver_SetPrescale
-                0x00000000       0x1c STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .text.TCNT_Driver_Start
-                0x00000000       0x22 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .text.TCNT_Driver_ClearStatus
-                0x00000000       0x18 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .text.TCNT_Driver_GetStatus
                 0x00000000       0x2c STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .debug_info    0x00000000      0x4ad STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .debug_abbrev  0x00000000       0xfe STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .text.TCNT_Driver_SetPrescale
+                0x00000000       0x2c STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .text.TCNT_Driver_Start
+                0x00000000       0x3c STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .text.TCNT_Driver_ClearStatus
+                0x00000000       0x28 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .text.TCNT_Driver_GetStatus
+                0x00000000       0x40 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .debug_info    0x00000000      0x502 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .debug_abbrev  0x00000000      0x127 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
  .debug_aranges
                 0x00000000       0x48 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
  .debug_ranges  0x00000000       0x38 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .debug_line    0x00000000      0x21c STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .debug_str     0x00000000      0x418 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .debug_line    0x00000000      0x256 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .debug_str     0x00000000      0x479 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
- .debug_frame   0x00000000      0x100 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .debug_frame   0x00000000       0xfc STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
  .ARM.attributes
                 0x00000000       0x33 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+ .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .data.TCNT_CONF_SETUP
+                0x00000000       0x10 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .data.TCNT_SETUP
+                0x00000000        0x4 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .debug_info    0x00000000      0x38a STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .debug_abbrev  0x00000000       0xe9 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .debug_aranges
+                0x00000000       0x18 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .debug_line    0x00000000      0x1c5 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .debug_str     0x00000000      0x39b STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+ .ARM.attributes
+                0x00000000       0x33 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\TWI_DRIVER\TWI_Driver.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\TWI_DRIVER\TWI_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\TWI_DRIVER\TWI_Driver.o
@@ -1913,16 +1959,16 @@ Discarded input sections
  .text.LED_Module_Set_Off
                 0x00000000       0x38 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
  .text.LED_Module_Set_Dimming
-                0x00000000       0x28 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
- .debug_info    0x00000000      0x4a9 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
- .debug_abbrev  0x00000000      0x110 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
+                0x00000000       0x1a STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
+ .debug_info    0x00000000      0x54c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
+ .debug_abbrev  0x00000000      0x142 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
  .debug_aranges
                 0x00000000       0x30 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
  .debug_ranges  0x00000000       0x20 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
- .debug_line    0x00000000      0x239 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
- .debug_str     0x00000000      0x449 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
+ .debug_line    0x00000000      0x26c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
+ .debug_str     0x00000000      0x53a STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
  .comment       0x00000000       0x7d STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
- .debug_frame   0x00000000       0x7c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
+ .debug_frame   0x00000000       0x80 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
  .ARM.attributes
                 0x00000000       0x33 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
  .text          0x00000000        0x0 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
@@ -1934,13 +1980,13 @@ Discarded input sections
                 0x00000000        0x4 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
  .text.LED_Module_Init_Cfg
                 0x00000000        0xc STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
- .debug_info    0x00000000      0x250 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
- .debug_abbrev  0x00000000      0x101 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
+ .debug_info    0x00000000      0x515 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
+ .debug_abbrev  0x00000000      0x119 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
  .debug_aranges
                 0x00000000       0x20 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
  .debug_ranges  0x00000000       0x10 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
- .debug_line    0x00000000      0x21c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
- .debug_str     0x00000000      0x306 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
+ .debug_line    0x00000000      0x250 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
+ .debug_str     0x00000000      0x50e STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
  .comment       0x00000000       0x7d STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
  .debug_frame   0x00000000       0x30 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module_Cfg.o
  .ARM.attributes
@@ -1954,13 +2000,13 @@ Discarded input sections
                 0x00000000      0x108 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
  .text.LEVEL_INDICATOR_Module_Set_Dimming
                 0x00000000       0x24 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
- .debug_info    0x00000000      0x332 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
- .debug_abbrev  0x00000000      0x110 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
+ .debug_info    0x00000000      0x5f7 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
+ .debug_abbrev  0x00000000      0x128 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
  .debug_aranges
                 0x00000000       0x30 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
  .debug_ranges  0x00000000       0x20 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
- .debug_line    0x00000000      0x2cb STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
- .debug_str     0x00000000      0x481 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
+ .debug_line    0x00000000      0x2ff STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
+ .debug_str     0x00000000      0x689 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
  .comment       0x00000000       0x7d STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
  .debug_frame   0x00000000       0x7c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module.o
  .ARM.attributes
@@ -1974,13 +2020,13 @@ Discarded input sections
                 0x00000000        0x4 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
  .text.LEVEL_INDICATOR_Module_Init_Cfg
                 0x00000000       0x4c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
- .debug_info    0x00000000      0x349 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
+ .debug_info    0x00000000      0x60e STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
  .debug_abbrev  0x00000000      0x119 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
  .debug_aranges
                 0x00000000       0x20 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
  .debug_ranges  0x00000000       0x10 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
- .debug_line    0x00000000      0x2cd STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
- .debug_str     0x00000000      0x4c8 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
+ .debug_line    0x00000000      0x301 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
+ .debug_str     0x00000000      0x6d0 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
  .comment       0x00000000       0x7d STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
  .debug_frame   0x00000000       0x2c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LEVEL_INDICATOR_MODULE\LEVEL_INDICATOR_Module_Cfg.o
  .ARM.attributes
@@ -1996,13 +2042,13 @@ Discarded input sections
                 0x00000000       0x28 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
  .text.SEVEN_SEGMENT_Module_Set_Dimming
                 0x00000000       0x1a STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
- .debug_info    0x00000000      0x5c9 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
- .debug_abbrev  0x00000000      0x139 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
+ .debug_info    0x00000000      0x889 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
+ .debug_abbrev  0x00000000      0x151 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
  .debug_aranges
                 0x00000000       0x30 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
  .debug_ranges  0x00000000       0x20 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
- .debug_line    0x00000000      0x33e STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
- .debug_str     0x00000000      0x807 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
+ .debug_line    0x00000000      0x372 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
+ .debug_str     0x00000000      0x9b5 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
  .comment       0x00000000       0x7d STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
  .debug_frame   0x00000000       0x80 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module.o
  .ARM.attributes
@@ -2016,13 +2062,13 @@ Discarded input sections
                 0x00000000        0x4 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
  .text.SEVEN_SEGMENT_Module_Init_Cfg
                 0x00000000       0x18 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
- .debug_info    0x00000000      0x57b STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
+ .debug_info    0x00000000      0x83b STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
  .debug_abbrev  0x00000000      0x119 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
  .debug_aranges
                 0x00000000       0x20 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
  .debug_ranges  0x00000000       0x10 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
- .debug_line    0x00000000      0x358 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
- .debug_str     0x00000000      0x7b8 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
+ .debug_line    0x00000000      0x38c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
+ .debug_str     0x00000000      0x966 STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
  .comment       0x00000000       0x7d STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
  .debug_frame   0x00000000       0x2c STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\SEVEN_SEGMENT_MODULE\SEVEN_SEGMENT_Module_Cfg.o
  .ARM.attributes
@@ -2182,6 +2228,7 @@ LOAD STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
 LOAD STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\CAN_DRIVER\CAN_Driver.o
 LOAD STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
+LOAD STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\DRIVERS.o
 LOAD STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
 LOAD STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
@@ -2192,6 +2239,7 @@ LOAD STM32F103C8T6\DRIVERS\LIN_DRIVER\Lin_Driver.o
 LOAD STM32F103C8T6\DRIVERS\LIN_DRIVER\Lin_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
 LOAD STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+LOAD STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver.o
 LOAD STM32F103C8T6\DRIVERS\RTC_DRIVER\RTC_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver.o
@@ -2199,6 +2247,7 @@ LOAD STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
 LOAD STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
 LOAD STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+LOAD STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\TWI_DRIVER\TWI_Driver.o
 LOAD STM32F103C8T6\DRIVERS\TWI_DRIVER\TWI_Driver_Cfg.o
 LOAD STM32F103C8T6\DRIVERS\USART_DRIVER\USART_Driver.o
@@ -2533,16 +2582,16 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib
                 0x00000230       0x1d c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtn.o
 OUTPUT(103_LED_Project.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x21e7
+.debug_info     0x00000000     0x21b5
  .debug_info    0x00000000      0x3bb STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
  .debug_info    0x000003bb      0x1fd STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
  .debug_info    0x000005b8      0x65c STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
  .debug_info    0x00000c14      0x60b STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver.o
- .debug_info    0x0000121f      0x463 STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver_Cfg.o
- .debug_info    0x00001682      0x1ee STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
- .debug_info    0x00001870      0x43c src\main.o
- .debug_info    0x00001cac       0x94 src\startup_stm32f10x_md.o
- .debug_info    0x00001d40      0x4a7 src\system_stm32f10x.o
+ .debug_info    0x0000121f      0x431 STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver_Cfg.o
+ .debug_info    0x00001650      0x1ee STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .debug_info    0x0000183e      0x43c src\main.o
+ .debug_info    0x00001c7a       0x94 src\startup_stm32f10x_md.o
+ .debug_info    0x00001d0e      0x4a7 src\system_stm32f10x.o
 
 .debug_abbrev   0x00000000      0x9ed
  .debug_abbrev  0x00000000      0x148 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
@@ -2596,7 +2645,7 @@ OUTPUT(103_LED_Project.elf elf32-littlearm)
  .debug_line    0x00000fc2       0x7c src\startup_stm32f10x_md.o
  .debug_line    0x0000103e      0x246 src\system_stm32f10x.o
 
-.debug_str      0x00000000      0xf72
+.debug_str      0x00000000      0xf16
  .debug_str     0x00000000      0x335 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
                                 0x390 (size before relaxing)
  .debug_str     0x00000335       0x63 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
@@ -2605,13 +2654,13 @@ OUTPUT(103_LED_Project.elf elf32-littlearm)
                                 0x73e (size before relaxing)
  .debug_str     0x000008ec      0x3d6 STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver.o
                                 0x6ad (size before relaxing)
- .debug_str     0x00000cc2       0xc4 STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver_Cfg.o
-                                0x617 (size before relaxing)
- .debug_str     0x00000d86      0x104 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .debug_str     0x00000cc2       0x68 STM32F103C8T6\DRIVERS\SPI_DRIVER\SPI_Driver_Cfg.o
+                                0x5bb (size before relaxing)
+ .debug_str     0x00000d2a      0x104 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
                                 0x300 (size before relaxing)
- .debug_str     0x00000e8a       0x2e src\main.o
+ .debug_str     0x00000e2e       0x2e src\main.o
                                 0x581 (size before relaxing)
- .debug_str     0x00000eb8       0xba src\system_stm32f10x.o
+ .debug_str     0x00000e5c       0xba src\system_stm32f10x.o
                                 0x348 (size before relaxing)
 
 .comment        0x00000000       0x7c
@@ -2793,6 +2842,7 @@ DMA1_Channel4_IRQHandler                          src\startup_stm32f10x_md.o
 DMA1_Channel5_IRQHandler                          src\startup_stm32f10x_md.o
 DMA1_Channel6_IRQHandler                          src\startup_stm32f10x_md.o
 DMA1_Channel7_IRQHandler                          src\startup_stm32f10x_md.o
+DMA_CONF_SETUP                                    STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
 DMA_ClearFlag                                     Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
 DMA_ClearITPendingBit                             Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
 DMA_Cmd                                           Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
@@ -2806,6 +2856,8 @@ DMA_GetFlagStatus                                 Libraries\STM32F10x_StdPeriph_
 DMA_GetITStatus                                   Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
 DMA_ITConfig                                      Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
 DMA_Init                                          Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
+DMA_SETUP                                         STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver_Cfg.o
+                                                  STM32F103C8T6\DRIVERS\DMA_DRIVER\DMA_Driver.o
 DMA_SetCurrDataCounter                            Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
 DMA_StructInit                                    Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.o
 DebugMon_Handler                                  src\startup_stm32f10x_md.o
@@ -3024,10 +3076,11 @@ NVIC_PriorityGroupConfig                          Libraries\STM32F10x_StdPeriph_
 NVIC_SetVectorTable                               Libraries\STM32F10x_StdPeriph_Driver\src\misc.o
 NVIC_SystemLPConfig                               Libraries\STM32F10x_StdPeriph_Driver\src\misc.o
 PVD_IRQHandler                                    src\startup_stm32f10x_md.o
+PWM_CONF_SETUP                                    STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
 PWM_Driver_Init                                   STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
 PWM_Driver_SetDutyCylce                           STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
-                                                  STM32F103C8T6\MODULES\HARDWARE_MODULES\LED_MODULE\LED_Module.o
-PWM_Driver_SetPeriod                              STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
+PWM_SETUP                                         STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver_Cfg.o
+                                                  STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
 PWR_BackupAccessCmd                               Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.o
 PWR_ClearFlag                                     Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.o
 PWR_DeInit                                        Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.o
@@ -3217,13 +3270,15 @@ SystemCoreClockUpdate                             src\system_stm32f10x.o
 SystemInit                                        src\system_stm32f10x.o
                                                   src\startup_stm32f10x_md.o
 TAMPER_IRQHandler                                 src\startup_stm32f10x_md.o
+TCNT_CONF_SETUP                                   STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
 TCNT_Driver_ClearStatus                           STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
 TCNT_Driver_GetStatus                             STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
 TCNT_Driver_Init                                  STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
 TCNT_Driver_SetPeriod                             STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
-                                                  STM32F103C8T6\DRIVERS\PWM_DRIVER\PWM_Driver.o
 TCNT_Driver_SetPrescale                           STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
 TCNT_Driver_Start                                 STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
+TCNT_SETUP                                        STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver_Cfg.o
+                                                  STM32F103C8T6\DRIVERS\TIM_DRIVER\TCNT_Driver.o
 TIM1_BRK_IRQHandler                               src\startup_stm32f10x_md.o
 TIM1_CC_IRQHandler                                src\startup_stm32f10x_md.o
 TIM1_TRG_COM_IRQHandler                           src\startup_stm32f10x_md.o

@@ -18,7 +18,7 @@
  * Ensure software uses aligned word accesses to access the SysTick registers
  */
 
-#include <NVIC_DRIVER/NVIC_Driver.h>
+#include "NVIC_Driver_Cfg.h"
 #include "SYSTICK_Driver_Cfg.h"
 
 static volatile uint32 Tick_Counter=0x00;

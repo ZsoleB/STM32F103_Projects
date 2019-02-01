@@ -6,38 +6,47 @@
  */
 #include "PWM_Driver_Cfg.h"
 
-void PWM_Driver_Init(TIM_TypeDef *TIMx)
+void PWM_Driver_Init()
 {
-	#if (PWM_DRIVER_CAPTURE_COMPARE_REGISTER_1==OK)
-		TIMx->CCMR1|=((PWM_DRIVER_OUTPUT_COMPARE_1_PRELOAD_ENABLE<<0x03)
-				   |  (PWM_DRIVER_OUTPUT_COMPARE_1_MODE<<0x04));
-		TIMx->CCER |=((PWM_DRIVER_CAPTURE_COMPARE_1_POLARITY<<0x01)
-				   |  (PWM_DRIVER_CAPTURE_COMPARE_1_ENABLE));
-	#endif
+	uint16 index = 0x00;
 
-	#if (PWM_DRIVER_CAPTURE_COMPARE_REGISTER_2==OK)
-		TIMx->CCMR1|=((PWM_DRIVER_OUTPUT_COMPARE_2_PRELOAD_ENABLE<<0x0B)
-				   |  (PWM_DRIVER_OUTPUT_COMPARE_2_MODE<<0x0C));
-		TIMx->CCER |=((PWM_DRIVER_CAPTURE_COMPARE_2_POLARITY<<0x05)
-				   |  (PWM_DRIVER_CAPTURE_COMPARE_2_ENABLE<<0x04));
-	#endif
+	for(index=0x00;index<PWM_DRIVER_INSTANCE_NUM;index++)
+	{
+		switch(PWM_SETUP[index].PWM_Channel)
+			{
+				case PWM_Driver_Channel_1:
+					PWM_SETUP[index].PWM_Timer->CCMR1 |=(((PWM_SETUP[index].PWM_Output_compare_preload_enable)<<0x03)
+													  |  ((PWM_SETUP[index].PWM_Mode)<<0x04));
+					PWM_SETUP[index].PWM_Timer->CCER  |=(((PWM_SETUP[index].PWM_polarity)<<0x01)
+												   	  |  (PWM_SETUP[index].PWM_Capture_compare_enable));
 
-	#if (PWM_DRIVER_CAPTURE_COMPARE_REGISTER_3==OK)
-		TIMx->CCMR2|=((PWM_DRIVER_OUTPUT_COMPARE_3_PRELOAD_ENABLE<<0x03)
-				   |  (PWM_DRIVER_OUTPUT_COMPARE_3_MODE<<0x04));
-		TIMx->CCER |=((PWM_DRIVER_CAPTURE_COMPARE_3_POLARITY<<0x09)
-				   |  (PWM_DRIVER_CAPTURE_COMPARE_3_ENABLE<<0x08));
-	#endif
+					break;
 
-	#if (PWM_DRIVER_CAPTURE_COMPARE_REGISTER_4==OK)
-		TIMx->CCMR2|=((PWM_DRIVER_OUTPUT_COMPARE_4_PRELOAD_ENABLE<<0x0B)
-				   |  (PWM_DRIVER_OUTPUT_COMPARE_4_MODE<<0x0C));
-		TIMx->CCER |=((PWM_DRIVER_CAPTURE_COMPARE_4_POLARITY<<0x0D)
-				   |  (PWM_DRIVER_CAPTURE_COMPARE_4_ENABLE<<0x0C));
-	#endif
+				case PWM_Driver_Channel_2:
+					PWM_SETUP[index].PWM_Timer->CCMR1  |=(((PWM_SETUP[index].PWM_Output_compare_preload_enable)<<0x0B)
+													   |  ((PWM_SETUP[index].PWM_Mode)<<0x0C));
+					PWM_SETUP[index].PWM_Timer->CCER   |=(((PWM_SETUP[index].PWM_polarity)<<0x05)
+												   	   |  (PWM_SETUP[index].PWM_Capture_compare_enable<<0x04));
+					break;
+
+				case PWM_Driver_Channel_3:
+					PWM_SETUP[index].PWM_Timer->CCMR2  |=(((PWM_SETUP[index].PWM_Output_compare_preload_enable)<<0x03)
+													   |  ((PWM_SETUP[index].PWM_Mode)<<0x04));
+					PWM_SETUP[index].PWM_Timer->CCER   |=(((PWM_SETUP[index].PWM_polarity)<<0x09)
+												   	   |  (PWM_SETUP[index].PWM_Capture_compare_enable<<0x08));
+					break;
+
+				case PWM_Driver_Channel_4:
+					PWM_SETUP[index].PWM_Timer->CCMR2   |=(((PWM_SETUP[index].PWM_Output_compare_preload_enable)<<0x0B)
+														|  ((PWM_SETUP[index].PWM_Mode)<<0x0C));
+					PWM_SETUP[index].PWM_Timer->CCER	|=(((PWM_SETUP[index].PWM_polarity)<<0x0D)
+												   	   	|  (PWM_SETUP[index].PWM_Capture_compare_enable<<0x0C));
+					break;
+			};
+	}
 }
 
-void PWM_Driver_SetDutyCylce(TIM_TypeDef *TIMx, uint32 DutyCycle)
+void PWM_Driver_SetDutyCylce(uint8 PWM_setup_nr, uint8 DutyCycle)
 {
 	DutyCycle = (uint16)DutyCycle;
 	if(DutyCycle<0)
@@ -49,24 +58,22 @@ void PWM_Driver_SetDutyCylce(TIM_TypeDef *TIMx, uint32 DutyCycle)
 		DutyCycle = 100;
 	}
 
-	#if PWM_DRIVER_CAPTURE_COMPARE_REGISTER_1 == OK
-		TIMx->CCR1 = ((uint16)(((TIMx->ARR)*DutyCycle)/100));
-	#endif
+	switch(PWM_SETUP[PWM_setup_nr].PWM_Channel)
+	{
+		case PWM_Driver_Channel_1:
+			PWM_SETUP[PWM_setup_nr].PWM_Timer->CCR1 = ((uint16)(((PWM_SETUP[PWM_setup_nr].PWM_Timer->ARR)*DutyCycle)/100));
+			break;
 
-	#if PWM_DRIVER_CAPTURE_COMPARE_REGISTER_2 == OK
-		TIMx->CCR2 = ((uint16)(((TIMx->ARR)*DutyCycle)/100));
-	#endif
+		case PWM_Driver_Channel_2:
+			PWM_SETUP[PWM_setup_nr].PWM_Timer->CCR2 = ((uint16)(((PWM_SETUP[PWM_setup_nr].PWM_Timer->ARR)*DutyCycle)/100));
+			break;
 
-	#if PWM_DRIVER_CAPTURE_COMPARE_REGISTER_3 == OK
-		TIMx->CCR3 = ((uint16)(((TIMx->ARR)*DutyCycle)/100));
-	#endif
+		case PWM_Driver_Channel_3:
+			PWM_SETUP[PWM_setup_nr].PWM_Timer->CCR3 = ((uint16)(((PWM_SETUP[PWM_setup_nr].PWM_Timer->ARR)*DutyCycle)/100));
+			break;
 
-	#if PWM_DRIVER_CAPTURE_COMPARE_REGISTER_4 == OK
-		TIMx->CCR4 = ((uint16)(((TIMx->ARR)*DutyCycle)/100));
-	#endif
-}
-
-void PWM_Driver_SetPeriod(TIM_TypeDef *TIMx,uint32 Period)
-{
-	TCNT_Driver_SetPeriod(TIMx,((uint16)Period));
+		case PWM_Driver_Channel_4:
+			PWM_SETUP[PWM_setup_nr].PWM_Timer->CCR4 = ((uint16)(((PWM_SETUP[PWM_setup_nr].PWM_Timer->ARR)*DutyCycle)/100));
+			break;
+	};
 }
