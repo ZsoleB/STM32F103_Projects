@@ -32,7 +32,7 @@ int main(void)
 
 	SPI_Driver_Init();
 	SPI_Driver_Start(SPI_DRIVER_1);
-
+/*Hello*/
 	while (1)
 	{
 		SPI_Driver_Transcieve_Data(SPI_DRIVER_1,(uint16_t)_H_);
