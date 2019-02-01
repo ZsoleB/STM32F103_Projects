@@ -21,6 +21,7 @@
 #define uint8			uint8_t
 #define uint16			uint16_t
 #define uint32			uint32_t
+#define uint64			uint64_t
 #define MAX8			0xFF
 #define MAX16			0xFFFF
 #define MAX32			0xFFFFFFFF
