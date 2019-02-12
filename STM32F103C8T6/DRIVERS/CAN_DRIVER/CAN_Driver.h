@@ -134,7 +134,7 @@ typedef struct
 
 void CAN_Driver_Clear_Request_Completed_Flag(uint8 MailBox_Number);
 uint8 CAN_Driver_Check_Message_Pending(uint8 FIFO_Number);
-void CAN_Driver_DebugFreeze();
+void CAN_Driver_DebugFreeze(uint8 option);
 void CAN_Driver_Enter_NormalMode();
 void CAN_Driver_Enter_SleepMode();
 void CAN_Driver_Init();

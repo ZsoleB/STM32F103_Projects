@@ -42,13 +42,21 @@ static CAN_Driver_Set_State CAN_Driver_StateSetters[] = {
 		CAN_Driver_Enter_InitMode, CAN_Driver_Enter_NormalMode,
 		CAN_Driver_Enter_SleepMode };
 
-void CAN_Driver_DebugFreeze()
+void CAN_Driver_DebugFreeze(uint8 option)
 {
-#if (CAN_DRIVER_RUN_ON_DEBUG_MODE == OK)
-	CAN1->MCR &= (~CAN_DRIVER_DEBUG_FREEZE);
-#else
-	CAN1->MCR |= CAN_DRIVER_DEBUG_FREEZE;
-#endif
+	if (option == NOK)
+	{
+		CAN1->MCR &= (~CAN_DRIVER_DEBUG_FREEZE);
+	}
+	else if (option == OK)
+	{
+		CAN1->MCR |= CAN_DRIVER_DEBUG_FREEZE;
+	}
+	else
+	{
+		/*Nothing to do*/
+	}
+
 }
 
 void CAN_Driver_Enter_NormalMode()
@@ -92,12 +100,12 @@ void CAN_Driver_Init()
 	CAN_Driver_ModeChange(CAN_DRIVER_OPERATING_MODE_INIT);
 
 	/*Set up the CAN option registers*/
-
+#if(CAN_DRIVER_RUN_ON_DEBUG_MODE == OK)
 	/*Can-debug configuration*/
-	CAN_Driver_DebugFreeze();
-
-	/*Self-test Mode*/
-	CAN_Driver_SetTestMode();
+	CAN_Driver_DebugFreeze(NOK);
+#elif(CAN_DRIVER_RUN_ON_DEBUG_MODE == NOK)
+	CAN_Driver_DebugFreeze(OK);
+#endif
 
 	/*Can Transmit priority*/
 #if(CAN_DRIVER_TRANSMIT_PRIORITY == CAN_DRIVER_TRANSMIT_PRIORITY_BY_ID)
