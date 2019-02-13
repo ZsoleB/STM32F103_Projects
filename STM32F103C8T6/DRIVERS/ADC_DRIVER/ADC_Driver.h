@@ -12,31 +12,32 @@
 #include "StdTypes.h"
 
 /*ADC Configuration*/
-#define ADC_DRIVER_ON												(((uint8)0x01))
-#define ADC_DRIVER_OFF												(~((uint8)0x00))
+#define ADC_DRIVER_ON												(0x01)
+#define ADC_DRIVER_OFF												(~(0x01))
 #define ADC_DRIVER_REGULAR_START									((0x01)<<0x16)
-#define ADC_DRIVER_RESET_CALLIBRATION								(((uint8)0x01)<<0x03)
-#define ADC_DRIVER_CALLIBRATION										(((uint8)0x01)<<0x02)
+#define ADC_DRIVER_RESET_CALLIBRATION								((0x01)<<0x03)
+#define ADC_DRIVER_CALLIBRATION										((0x01)<<0x02)
 #define ADC_DRIVER_DISCONTINUOUS_MODE_ENABLE						((0x01)<<0x0B)
+#define ADC_DRIVER_CONTINUOUS_CONVERSION							((0x01)<<0x01)
 #define ADC_DRIVER_EXTERNAL_TRIGGER_ENABLE							((0x01)<<0x14)
 #define ADC_DRIVER_EXTERNAL_TRIGGER_SWSTART							((0x07)<<0x11)
 #define ADC_ALIGNMENT_LEFT											((0x01)<<0x0B)
 #define ADC_ALIGNMENT_RIGHT											((0x00)<<0x0B)
-#define ADC_DRIVER_REGULAR_CHANNEL_START_FLAG 						((uint8)0x10)
-#define ADC_DRIVER_REGULAR_CHANNEL_END_OF_CONVERSION_FLAG 			((uint8)0x02)
-#define ADC_DRIVER_ANALOG_WATCHDOG_FLAG 							((uint8)0x01)
+#define ADC_DRIVER_REGULAR_CHANNEL_START_FLAG 						(0x10)
+#define ADC_DRIVER_REGULAR_CHANNEL_END_OF_CONVERSION_FLAG 			(0x02)
+#define ADC_DRIVER_ANALOG_WATCHDOG_FLAG 							(0x01)
 #define ADC_DRIVER_PRESCALE_BY_2 									((0x00)<<14);/*Can be set in RCC_CFGR register*/
 #define ADC_DRIVER_PRESCALE_BY_4 									((0x01)<<14);
 #define ADC_DRIVER_PRESCALE_BY_6 									((0x02)<<14);
 #define ADC_DRIVER_PRESCALE_BY_8 									((0x03)<<14);
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_1_5_CYCLES 				((uint8)0x00)
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_7_5_CYCLES 				((uint8)0x01)
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_13_5_CYCLES 				((uint8)0x02)
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_28_5_CYCLES 				((uint8)0x03)
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_41_5_CYCLES 				((uint8)0x04)
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_55_5_CYCLES 				((uint8)0x05)
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_71_5_CYCLES 				((uint8)0x06)
-#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_239_5_CYCLES 				((uint8)0x07)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_1_5_CYCLES 				(0x00)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_7_5_CYCLES 				(0x01)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_13_5_CYCLES 				(0x02)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_28_5_CYCLES 				(0x03)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_41_5_CYCLES 				(0x04)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_55_5_CYCLES 				(0x05)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_71_5_CYCLES 				(0x06)
+#define ADC_DRIVER_CHANNEL_SAMPLING_TIME_239_5_CYCLES 				(0x07)
 #define ADC_DRIVER_SEQUENCE_1_CONVERSION							(0x00<<0x14)
 #define ADC_DRIVER_SEQUENCE_2_CONVERSIONS							(0x01<<0x14)
 #define ADC_DRIVER_SEQUENCE_3_CONVERSIONS							(0x02<<0x14)
@@ -112,5 +113,6 @@ void ADC_Driver_Off(uint8 ADC_Instance_Number);
 void ADC_Driver_On(uint8 ADC_Instance_Number);
 void ADC_Driver_StartSampling(uint8 ADC_Instance_Number);
 void ADC_Driver_SetChannel(uint8 ADC_Instance_Number,uint8 ChannelNumber);
+void ADC_Driver_Set_Prescale_Value();
 
 #endif /* ADC_DRIVER_H_ */

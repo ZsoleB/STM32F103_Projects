@@ -19,13 +19,13 @@
 
 typedef enum
 {
-	ADC_DRIVER_0
+	ADC_DRIVER_1
 }ADC_Driver_Instances;
 
 typedef enum
 {
-	ADC_DRIVER_0_CHANNEL_1,
-	ADC_DRIVER_0_CHANNEL_2,
+	ADC_DRIVER_1_CHANNEL_1,
+	ADC_DRIVER_1_CHANNEL_2,
 }ADC_Driver_Channel_Instances;
 
 #endif /* ADC_DRIVER_CFG_H_ */

@@ -23,8 +23,7 @@ typedef enum
 
 typedef enum
 {
-	GPIO_DRIVER_PORTA_PIN11,
-	GPIO_DRIVER_PORTA_PIN12
+	GPIO_DRIVER_PORTA_PIN1
 }GPIO_Driver_A_Pin_Instances;
 
 #endif /* GPIO_DRIVER_CFG_STM32F103_H_ */

@@ -19,20 +19,33 @@ void ADC_Driver_Init()
 		RCC->APB2ENR|=RCC_APB2ENR_ADC2EN;
 	#endif
 
+	/*Stop all ADCs in case of initialization*/
+	ADC1->CR2 &= ADC_DRIVER_OFF;
+	ADC2->CR2 &= ADC_DRIVER_OFF;
+
+	ADC_Driver_Set_Prescale_Value();
+
 	for(index=0x00;index<ADC_DRIVER_INSTANCE_NUM;index++)
 	{
-		/*Select the frequency of the clock to the ADCs*/
-		RCC->CFGR |= ADC_DRIVER_PRESCALE;
+		/*Enable SWSTART as external trigger*/
+		ADC_SETUP[index].ADC_Instance->CR2 |=ADC_DRIVER_EXTERNAL_TRIGGER_ENABLE|ADC_DRIVER_EXTERNAL_TRIGGER_SWSTART;
 
 		if (ADC_SETUP[index].ADC_Single_Conversion == OK)
 		{
-
 			/*In Single conversion mode the ADC does one conversion. This mode is started either by
-			setting the ADON bit in the ADC_CR2 register (for a regular channel only) or by external
-			trigger (for a regular or injected channel), while the CONT bit is 0.*/
+			 setting the ADON bit in the ADC_CR2 register (for a regular channel only) or by external
+			 trigger (for a regular or injected channel), while the CONT bit is 0.*/
 
-			ADC_SETUP[index].ADC_Instance->CR2|=ADC_DRIVER_EXTERNAL_TRIGGER_ENABLE|ADC_DRIVER_EXTERNAL_TRIGGER_SWSTART;
+			ADC_SETUP[index].ADC_Instance->CR2 &= (~ADC_DRIVER_CONTINUOUS_CONVERSION);
 
+		}
+		else if (ADC_SETUP[index].ADC_Single_Conversion == NOK)
+		{
+			ADC_SETUP[index].ADC_Instance->CR2 |= ADC_DRIVER_CONTINUOUS_CONVERSION;
+		}
+		else
+		{
+			/*Nothing to do*/
 		}
 
 		/*Set the alignment*/
@@ -123,14 +136,18 @@ uint16 ADC_Driver_GetSample(uint8 ADC_Instance_Number)
 
 uint8 ADC_Driver_GetStatus(uint8 ADC_Instance_Number,uint8 Event)
 {
+	uint8 ResultCode = 0x00;
+
 	if((ADC_SETUP[ADC_Instance_Number].ADC_Instance->SR & Event)!=FALSE)
 	{
-		return SUCCES;
+		ResultCode = SUCCES;
 	}
 	else
 	{
-		return FAILED;
+		ResultCode = FAILED;
 	}
+
+	return ResultCode;
 }
 
 void ADC_Driver_ClearStatus(uint8 ADC_Instance_Number)
@@ -153,18 +170,8 @@ void ADC_Driver_StartSampling(uint8 ADC_Instance_Number)
 	ADC_SETUP[ADC_Instance_Number].ADC_Instance->CR2|=ADC_DRIVER_REGULAR_START;
 }
 
-#if(ADC_DRIVER_SEQUENTIAL_READ == OK)
-	void ADC_Driver_SetChannel(uint8 ADC_Instance_Number,uint8 ChannelNumber)
-	{
-		/*If Sequnetial Read is used this function isn't needed*/
-	}
-
-#else
-
-	void ADC_Driver_SetChannel(uint8 ADC_Instance_Number,uint8 ChannelNumber)
-	{
-		/*Set the desired channel to the sequence register (only the 1st sequence is used in this case)*/
-		ADC_SETUP[ADC_Instance_Number].ADC_Instance->SQR3 |= ChannelNumber;
-	}
-
-#endif
+void ADC_Driver_Set_Prescale_Value()
+{
+	/*Select the frequency of the clock to the ADCs*/
+	RCC->CFGR |= ADC_DRIVER_PRESCALE;
+}
