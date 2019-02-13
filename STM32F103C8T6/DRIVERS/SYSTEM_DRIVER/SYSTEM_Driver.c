@@ -104,4 +104,76 @@ void SYSTEM_Driver_Set_System_Clock()
 	}
 }
 
+#if(SYSTEM_DRIVER_PVD_ENABLE==OK)
 
+/*
+The device has an integrated POR/PDR circuitry that allows proper operation starting
+from/down to 2 V.
+
+The device remains in Reset mode when VDD/VDDA is below a specified threshold,
+VPOR/PDR, without the need for an external reset circuit.
+The PVD can be used to monitor the VDD/VDDA power supply by comparing it to a threshold
+selected by the PLS bits.
+*/
+
+void SYSTEM_Driver_PVD_Init()
+{
+	SYSTEM_Driver_PVD_Disable();
+
+	/*Select PVD threshold*/
+	PWR->CR |= SYSTEM_DRIVER_PVD_THRESHOLD;
+
+	SYSTEM_Driver_PVD_Enable();
+}
+void SYSTEM_Driver_PVD_Enable()
+{
+	/*Enable the Power voltage detector*/
+	PWR->CR |= SYSTEM_DRIVER_PVD_ON;
+}
+
+void SYSTEM_Driver_PVD_Disable()
+{
+	/*Disable the Power voltage detector*/
+	PWR->CR &= SYSTEM_DRIVER_PVD_OFF;
+}
+
+void SYSTEM_Driver_PVD_Get_Power_Status()
+{
+	/*PVD output bit indicates the power consumption status (0 - above threshold, 1 - bellow threshold)*/
+	{
+		uint8 ResultCode = FAILED;
+
+		if ((PWR->CSR & SYSTEM_DRIVER_PVD_THRESHOLD_FLAG) != 0x00)
+		{
+			ResultCode =  SUCCES;
+		}
+		else if((PWR->CSR & SYSTEM_DRIVER_PVD_THRESHOLD_FLAG) == 0x00)
+		{
+			ResultCode = FAILED;
+		}
+		else
+		{
+			/*Nothing to do*/
+		}
+		return ResultCode;
+	}
+}
+
+#endif
+
+/*Sleep mode (CPU clock off, all peripherals including Cortex®-M3 core peripherals like
+NVIC, SysTick, etc. are kept running)*/
+void SYSTEM_Driver_Enter_Sleep_Mode()
+{
+
+}
+/*Stop mode (all clocks are stopped)*/
+void SYSTEM_Driver_Enter_Stop_Mode()
+{
+
+}
+/*Standby mode (1.8V domain powered-off)*/
+void SYSTEM_Driver_Enter_Standby_Mode()
+{
+
+}
