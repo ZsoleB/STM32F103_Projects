@@ -1280,13 +1280,49 @@ Discarded input sections
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .text.ADC_Driver_Init
+                0x00000000      0x570 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .text.ADC_Driver_GetSample
+                0x00000000       0x34 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .text.ADC_Driver_GetStatus
+                0x00000000       0x4c STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .text.ADC_Driver_ClearStatus
                 0x00000000       0x30 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .text.ADC_Driver_Off
                 0x00000000       0x44 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .text.ADC_Driver_On
+                0x00000000       0x44 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .text.ADC_Driver_StartSampling
+                0x00000000       0x44 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .text.ADC_Driver_Set_Prescale_Value
+                0x00000000       0x18 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_info    0x00000000      0x497 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_abbrev  0x00000000      0x14f STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_aranges
+                0x00000000       0x58 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_ranges  0x00000000       0x48 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_line    0x00000000      0x2c4 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_str     0x00000000      0x463 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .debug_frame   0x00000000      0x14c STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .ARM.attributes
+                0x00000000       0x33 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .data.ADC_CONF_SETUP
+                0x00000000       0x38 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .data.ADC_SETUP
+                0x00000000        0x4 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .debug_info    0x00000000      0x2c7 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .debug_abbrev  0x00000000       0xe9 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .debug_aranges
+                0x00000000       0x18 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .debug_line    0x00000000      0x1c3 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .debug_str     0x00000000      0x347 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+ .ARM.attributes
+                0x00000000       0x33 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\CAN_DRIVER\CAN_Driver.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\CAN_DRIVER\CAN_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\CAN_DRIVER\CAN_Driver.o
@@ -1396,31 +1432,12 @@ Discarded input sections
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .text.EXTI_Driver_Init
-                0x00000000       0xf8 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .text.EXTI_Driver_Rising_Trigger_Select
-                0x00000000       0x2c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .text.EXTI_Driver_Rising_Trigger_Clear
                 0x00000000       0x2c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .text.EXTI_Driver_Falling_Trigger_Select
                 0x00000000       0x2c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .text.EXTI_Driver_Falling_Trigger_Clear
                 0x00000000       0x2c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .text.EXTI_Driver_Generate_SWInterrupt
-                0x00000000       0x3c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .text.EXTI_Driver_Clear_PendingInterrupt
-                0x00000000       0x2c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .debug_info    0x00000000      0x342 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .debug_abbrev  0x00000000       0xeb STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .debug_aranges
-                0x00000000       0x50 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .debug_ranges  0x00000000       0x40 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .debug_line    0x00000000      0x244 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .debug_str     0x00000000      0x3a9 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .debug_frame   0x00000000      0x128 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
- .ARM.attributes
-                0x00000000       0x33 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\FLASH_DRIVER\FLASH_Driver.o
  .data          0x00000000        0x0 STM32F103C8T6\DRIVERS\FLASH_DRIVER\FLASH_Driver.o
  .bss           0x00000000        0x0 STM32F103C8T6\DRIVERS\FLASH_DRIVER\FLASH_Driver.o
@@ -1681,15 +1698,21 @@ Discarded input sections
                 0x00000000       0x3c STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
  .text.SYSTEM_Driver_Set_System_Clock
                 0x00000000      0x128 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
- .debug_info    0x00000000      0x39a STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
- .debug_abbrev  0x00000000      0x114 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .text.SYSTEM_Driver_Enter_Sleep_Mode
+                0x00000000        0xc STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .text.SYSTEM_Driver_Enter_Stop_Mode
+                0x00000000        0xc STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .text.SYSTEM_Driver_Enter_Standby_Mode
+                0x00000000        0xc STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .debug_info    0x00000000      0x3cd STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .debug_abbrev  0x00000000      0x12a STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
  .debug_aranges
-                0x00000000       0x28 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
- .debug_ranges  0x00000000       0x18 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
- .debug_line    0x00000000      0x253 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
- .debug_str     0x00000000      0x35e STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+                0x00000000       0x40 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .debug_ranges  0x00000000       0x30 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .debug_line    0x00000000      0x286 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .debug_str     0x00000000      0x3bc STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
  .comment       0x00000000       0x7d STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
- .debug_frame   0x00000000       0x60 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+ .debug_frame   0x00000000       0xc0 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
  .ARM.attributes
                 0x00000000       0x33 STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
  .text          0x00000000        0x0 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
@@ -2343,233 +2366,226 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x0800010c      0xd80
+.text           0x0800010c      0x950
                 0x0800010c                . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0x40 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
  *(.text*)
- .text.ADC_Driver_Init
-                0x0800014c      0x570 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                0x0800014c                ADC_Driver_Init
- .text.ADC_Driver_GetSample
-                0x080006bc       0x34 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                0x080006bc                ADC_Driver_GetSample
- .text.ADC_Driver_GetStatus
-                0x080006f0       0x4c STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                0x080006f0                ADC_Driver_GetStatus
- .text.ADC_Driver_On
-                0x0800073c       0x44 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                0x0800073c                ADC_Driver_On
- .text.ADC_Driver_StartSampling
-                0x08000780       0x44 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                0x08000780                ADC_Driver_StartSampling
- .text.ADC_Driver_Set_Prescale_Value
-                0x080007c4       0x18 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                0x080007c4                ADC_Driver_Set_Prescale_Value
+ .text.EXTI_Driver_Init
+                0x0800014c      0x184 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                0x0800014c                EXTI_Driver_Init
+ .text.EXTI_Driver_Rising_Trigger_Select
+                0x080002d0       0x2c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                0x080002d0                EXTI_Driver_Rising_Trigger_Select
+ .text.EXTI_Driver_Generate_SWInterrupt
+                0x080002fc       0x3c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                0x080002fc                EXTI_Driver_Generate_SWInterrupt
+ .text.EXTI_Driver_Clear_PendingInterrupt
+                0x08000338       0x2c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                0x08000338                EXTI_Driver_Clear_PendingInterrupt
  .text.GPIO_Driver_Init
-                0x080007dc      0x290 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
-                0x080007dc                GPIO_Driver_Init
+                0x08000364      0x290 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+                0x08000364                GPIO_Driver_Init
  .text.NVIC_Driver_SetInterrupt
-                0x08000a6c       0xc0 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
-                0x08000a6c                NVIC_Driver_SetInterrupt
+                0x080005f4       0xc0 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                0x080005f4                NVIC_Driver_SetInterrupt
  .text.NVIC_Driver_PriorityGroupConfig
-                0x08000b2c       0x4c STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
-                0x08000b2c                NVIC_Driver_PriorityGroupConfig
+                0x080006b4       0x4c STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                0x080006b4                NVIC_Driver_PriorityGroupConfig
+ .text.NVIC_Driver_Set_EXTI_Interrupt
+                0x08000700       0x24 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                0x08000700                NVIC_Driver_Set_EXTI_Interrupt
  .text.NVIC_Driver_Set_SYSTICK_Interrupt
-                0x08000b78       0x38 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
-                0x08000b78                NVIC_Driver_Set_SYSTICK_Interrupt
+                0x08000724       0x38 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                0x08000724                NVIC_Driver_Set_SYSTICK_Interrupt
  .text.SysTick_Handler
-                0x08000bb0       0x24 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
-                0x08000bb0                SysTick_Handler
+                0x0800075c       0x24 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+                0x0800075c                SysTick_Handler
  .text.SYSTICK_Driver_Init
-                0x08000bd4       0x38 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
-                0x08000bd4                SYSTICK_Driver_Init
+                0x08000780       0x38 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+                0x08000780                SYSTICK_Driver_Init
  .text.SYSTICK_Driver_Start
-                0x08000c0c       0x1c STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
-                0x08000c0c                SYSTICK_Driver_Start
- .text.main     0x08000c28       0x3c src\main.o
-                0x08000c28                main
+                0x080007b8       0x1c STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+                0x080007b8                SYSTICK_Driver_Start
+ .text.EXTI1_IRQHandler
+                0x080007d4       0x20 src\main.o
+                0x080007d4                EXTI1_IRQHandler
+ .text.main     0x080007f4       0x40 src\main.o
+                0x080007f4                main
  .text.Reset_Handler
-                0x08000c64       0x50 src\startup_stm32f10x_md.o
-                0x08000c64                Reset_Handler
+                0x08000834       0x50 src\startup_stm32f10x_md.o
+                0x08000834                Reset_Handler
  .text.Default_Handler
-                0x08000cb4        0x2 src\startup_stm32f10x_md.o
-                0x08000cb4                EXTI2_IRQHandler
-                0x08000cb4                DebugMon_Handler
-                0x08000cb4                TIM1_CC_IRQHandler
-                0x08000cb4                HardFault_Handler
-                0x08000cb4                PVD_IRQHandler
-                0x08000cb4                PendSV_Handler
-                0x08000cb4                NMI_Handler
-                0x08000cb4                EXTI3_IRQHandler
-                0x08000cb4                EXTI0_IRQHandler
-                0x08000cb4                I2C2_EV_IRQHandler
-                0x08000cb4                UsageFault_Handler
-                0x08000cb4                ADC1_2_IRQHandler
-                0x08000cb4                SPI1_IRQHandler
-                0x08000cb4                TAMPER_IRQHandler
-                0x08000cb4                DMA1_Channel4_IRQHandler
-                0x08000cb4                USART3_IRQHandler
-                0x08000cb4                RTC_IRQHandler
-                0x08000cb4                DMA1_Channel7_IRQHandler
-                0x08000cb4                CAN1_RX1_IRQHandler
-                0x08000cb4                TIM4_IRQHandler
-                0x08000cb4                I2C1_EV_IRQHandler
-                0x08000cb4                DMA1_Channel6_IRQHandler
-                0x08000cb4                TIM3_IRQHandler
-                0x08000cb4                RCC_IRQHandler
-                0x08000cb4                TIM1_TRG_COM_IRQHandler
-                0x08000cb4                DMA1_Channel1_IRQHandler
-                0x08000cb4                Default_Handler
-                0x08000cb4                EXTI15_10_IRQHandler
-                0x08000cb4                EXTI9_5_IRQHandler
-                0x08000cb4                SPI2_IRQHandler
-                0x08000cb4                MemManage_Handler
-                0x08000cb4                SVC_Handler
-                0x08000cb4                DMA1_Channel5_IRQHandler
-                0x08000cb4                EXTI4_IRQHandler
-                0x08000cb4                USB_LP_CAN1_RX0_IRQHandler
-                0x08000cb4                USB_HP_CAN1_TX_IRQHandler
-                0x08000cb4                DMA1_Channel3_IRQHandler
-                0x08000cb4                TIM1_UP_IRQHandler
-                0x08000cb4                WWDG_IRQHandler
-                0x08000cb4                TIM2_IRQHandler
-                0x08000cb4                TIM1_BRK_IRQHandler
-                0x08000cb4                EXTI1_IRQHandler
-                0x08000cb4                RTCAlarm_IRQHandler
-                0x08000cb4                USART2_IRQHandler
-                0x08000cb4                I2C2_ER_IRQHandler
-                0x08000cb4                DMA1_Channel2_IRQHandler
-                0x08000cb4                CAN1_SCE_IRQHandler
-                0x08000cb4                FLASH_IRQHandler
-                0x08000cb4                BusFault_Handler
-                0x08000cb4                USART1_IRQHandler
-                0x08000cb4                I2C1_ER_IRQHandler
-                0x08000cb4                USBWakeUp_IRQHandler
- *fill*         0x08000cb6        0x2 
+                0x08000884        0x2 src\startup_stm32f10x_md.o
+                0x08000884                EXTI2_IRQHandler
+                0x08000884                DebugMon_Handler
+                0x08000884                TIM1_CC_IRQHandler
+                0x08000884                HardFault_Handler
+                0x08000884                PVD_IRQHandler
+                0x08000884                PendSV_Handler
+                0x08000884                NMI_Handler
+                0x08000884                EXTI3_IRQHandler
+                0x08000884                EXTI0_IRQHandler
+                0x08000884                I2C2_EV_IRQHandler
+                0x08000884                UsageFault_Handler
+                0x08000884                ADC1_2_IRQHandler
+                0x08000884                SPI1_IRQHandler
+                0x08000884                TAMPER_IRQHandler
+                0x08000884                DMA1_Channel4_IRQHandler
+                0x08000884                USART3_IRQHandler
+                0x08000884                RTC_IRQHandler
+                0x08000884                DMA1_Channel7_IRQHandler
+                0x08000884                CAN1_RX1_IRQHandler
+                0x08000884                TIM4_IRQHandler
+                0x08000884                I2C1_EV_IRQHandler
+                0x08000884                DMA1_Channel6_IRQHandler
+                0x08000884                TIM3_IRQHandler
+                0x08000884                RCC_IRQHandler
+                0x08000884                TIM1_TRG_COM_IRQHandler
+                0x08000884                DMA1_Channel1_IRQHandler
+                0x08000884                Default_Handler
+                0x08000884                EXTI15_10_IRQHandler
+                0x08000884                EXTI9_5_IRQHandler
+                0x08000884                SPI2_IRQHandler
+                0x08000884                MemManage_Handler
+                0x08000884                SVC_Handler
+                0x08000884                DMA1_Channel5_IRQHandler
+                0x08000884                EXTI4_IRQHandler
+                0x08000884                USB_LP_CAN1_RX0_IRQHandler
+                0x08000884                USB_HP_CAN1_TX_IRQHandler
+                0x08000884                DMA1_Channel3_IRQHandler
+                0x08000884                TIM1_UP_IRQHandler
+                0x08000884                WWDG_IRQHandler
+                0x08000884                TIM2_IRQHandler
+                0x08000884                TIM1_BRK_IRQHandler
+                0x08000884                RTCAlarm_IRQHandler
+                0x08000884                USART2_IRQHandler
+                0x08000884                I2C2_ER_IRQHandler
+                0x08000884                DMA1_Channel2_IRQHandler
+                0x08000884                CAN1_SCE_IRQHandler
+                0x08000884                FLASH_IRQHandler
+                0x08000884                BusFault_Handler
+                0x08000884                USART1_IRQHandler
+                0x08000884                I2C1_ER_IRQHandler
+                0x08000884                USBWakeUp_IRQHandler
+ *fill*         0x08000886        0x2 
  .text.SystemInit
-                0x08000cb8       0x68 src\system_stm32f10x.o
-                0x08000cb8                SystemInit
+                0x08000888       0x68 src\system_stm32f10x.o
+                0x08000888                SystemInit
  .text.SetSysClock
-                0x08000d20        0xc src\system_stm32f10x.o
+                0x080008f0        0xc src\system_stm32f10x.o
  .text.SetSysClockTo72
-                0x08000d2c      0x100 src\system_stm32f10x.o
+                0x080008fc      0x100 src\system_stm32f10x.o
  .text.__libc_init_array
-                0x08000e2c       0x48 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
-                0x08000e2c                __libc_init_array
+                0x080009fc       0x48 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
+                0x080009fc                __libc_init_array
  *(.glue_7)
- .glue_7        0x08000e74        0x0 linker stubs
+ .glue_7        0x08000a44        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08000e74        0x0 linker stubs
+ .glue_7t       0x08000a44        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08000e74        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
+ .eh_frame      0x08000a44        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
  *(.init)
- .init          0x08000e74        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crti.o
-                0x08000e74                _init
- .init          0x08000e78        0x8 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtn.o
+ .init          0x08000a44        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crti.o
+                0x08000a44                _init
+ .init          0x08000a48        0x8 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtn.o
  *(.fini)
- .fini          0x08000e80        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crti.o
-                0x08000e80                _fini
- .fini          0x08000e84        0x8 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtn.o
-                0x08000e8c                . = ALIGN (0x4)
-                0x08000e8c                _etext = .
+ .fini          0x08000a50        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crti.o
+                0x08000a50                _fini
+ .fini          0x08000a54        0x8 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtn.o
+                0x08000a5c                . = ALIGN (0x4)
+                0x08000a5c                _etext = .
 
-.vfp11_veneer   0x08000e8c        0x0
- .vfp11_veneer  0x08000e8c        0x0 linker stubs
+.vfp11_veneer   0x08000a5c        0x0
+ .vfp11_veneer  0x08000a5c        0x0 linker stubs
 
-.v4_bx          0x08000e8c        0x0
- .v4_bx         0x08000e8c        0x0 linker stubs
+.v4_bx          0x08000a5c        0x0
+ .v4_bx         0x08000a5c        0x0 linker stubs
 
-.iplt           0x08000e8c        0x0
- .iplt          0x08000e8c        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
+.iplt           0x08000a5c        0x0
+ .iplt          0x08000a5c        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
 
-.rel.dyn        0x08000e8c        0x0
- .rel.iplt      0x08000e8c        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
+.rel.dyn        0x08000a5c        0x0
+ .rel.iplt      0x08000a5c        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
 
-.rodata         0x08000e8c        0x0
-                0x08000e8c                . = ALIGN (0x4)
+.rodata         0x08000a5c        0x0
+                0x08000a5c                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
-                0x08000e8c                . = ALIGN (0x4)
+                0x08000a5c                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08000e8c        0x0
-                0x08000e8c                __exidx_start = .
+.ARM            0x08000a5c        0x0
+                0x08000a5c                __exidx_start = .
  *(.ARM.exidx*)
-                0x08000e8c                __exidx_end = .
+                0x08000a5c                __exidx_end = .
 
-.preinit_array  0x08000e8c        0x0
-                0x08000e8c                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x08000a5c        0x0
+                0x08000a5c                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08000e8c                PROVIDE (__preinit_array_end, .)
+                0x08000a5c                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x08000e8c        0x4
-                0x08000e8c                PROVIDE (__init_array_start, .)
+.init_array     0x08000a5c        0x4
+                0x08000a5c                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x08000e8c        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
-                0x08000e90                PROVIDE (__init_array_end, .)
+ .init_array    0x08000a5c        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
+                0x08000a60                PROVIDE (__init_array_end, .)
 
-.fini_array     0x08000e90        0x4
+.fini_array     0x08000a60        0x4
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08000e90        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
+ .fini_array    0x08000a60        0x4 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08000e94                _sidata = LOADADDR (.data)
+                0x08000a64                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0xa8 load address 0x08000e94
+.data           0x20000000       0x6c load address 0x08000a64
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
  *(.data*)
- .data.ADC_CONF_SETUP
-                0x20000000       0x38 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
-                0x20000000                ADC_CONF_SETUP
- .data.ADC_SETUP
-                0x20000038        0x4 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
-                0x20000038                ADC_SETUP
  .data.GPIO_CONF_SETUP
-                0x2000003c       0x68 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
-                0x2000003c                GPIO_CONF_SETUP
+                0x20000000       0x68 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+                0x20000000                GPIO_CONF_SETUP
  .data.GPIO_SETUP
-                0x200000a4        0x4 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
-                0x200000a4                GPIO_SETUP
-                0x200000a8                . = ALIGN (0x4)
-                0x200000a8                _edata = .
+                0x20000068        0x4 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+                0x20000068                GPIO_SETUP
+                0x2000006c                . = ALIGN (0x4)
+                0x2000006c                _edata = .
 
-.igot.plt       0x200000a8        0x0 load address 0x08000f3c
- .igot.plt      0x200000a8        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
-                0x200000a8                . = ALIGN (0x4)
+.igot.plt       0x2000006c        0x0 load address 0x08000ad0
+ .igot.plt      0x2000006c        0x0 c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
+                0x2000006c                . = ALIGN (0x4)
 
-.bss            0x200000a8       0x24 load address 0x08000f3c
-                0x200000a8                _sbss = .
-                0x200000a8                __bss_start__ = _sbss
+.bss            0x2000006c       0x24 load address 0x08000ad0
+                0x2000006c                _sbss = .
+                0x2000006c                __bss_start__ = _sbss
  *(.bss)
- .bss           0x200000a8       0x1c c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
+ .bss           0x2000006c       0x1c c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
  *(.bss*)
  .bss.Tick_Counter
-                0x200000c4        0x4 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
- .bss.ADC_Sample
-                0x200000c8        0x2 src\main.o
-                0x200000c8                ADC_Sample
+                0x20000088        0x4 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .bss.daCounter
+                0x2000008c        0x1 src\main.o
+                0x2000008c                daCounter
  *(COMMON)
-                0x200000cc                . = ALIGN (0x4)
- *fill*         0x200000ca        0x2 
-                0x200000cc                _ebss = .
-                0x200000cc                __bss_end__ = _ebss
+                0x20000090                . = ALIGN (0x4)
+ *fill*         0x2000008d        0x3 
+                0x20000090                _ebss = .
+                0x20000090                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200000cc      0x100 load address 0x08000f3c
-                0x200000cc                . = ALIGN (0x4)
+                0x20000090      0x100 load address 0x08000ad0
+                0x20000090                . = ALIGN (0x4)
                 [!provide]                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
-                0x200000cc                . = (. + _Min_Heap_Size)
-                0x200001cc                . = (. + _Min_Stack_Size)
- *fill*         0x200000cc      0x100 
-                0x200001cc                . = ALIGN (0x4)
+                0x20000090                . = (. + _Min_Heap_Size)
+                0x20000190                . = (. + _Min_Stack_Size)
+ *fill*         0x20000090      0x100 
+                0x20000190                . = ALIGN (0x4)
 
 .memory_b1_text
  *(.mb1text)
@@ -2590,114 +2606,104 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib
  .ARM.attributes
                 0x0000001d       0x2d c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtbegin.o
  .ARM.attributes
-                0x0000004a       0x33 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+                0x0000004a       0x33 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .ARM.attributes
-                0x0000007d       0x33 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+                0x0000007d       0x33 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
  .ARM.attributes
-                0x000000b0       0x33 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+                0x000000b0       0x33 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
  .ARM.attributes
-                0x000000e3       0x33 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+                0x000000e3       0x33 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
  .ARM.attributes
-                0x00000116       0x33 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                0x00000116       0x33 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
  .ARM.attributes
-                0x00000149       0x33 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+                0x00000149       0x33 src\main.o
  .ARM.attributes
-                0x0000017c       0x33 src\main.o
+                0x0000017c       0x21 src\startup_stm32f10x_md.o
  .ARM.attributes
-                0x000001af       0x21 src\startup_stm32f10x_md.o
+                0x0000019d       0x33 src\system_stm32f10x.o
  .ARM.attributes
-                0x000001d0       0x33 src\system_stm32f10x.o
+                0x000001d0       0x2d c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000203       0x2d c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
- .ARM.attributes
-                0x00000230       0x1d c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtn.o
+                0x000001fd       0x1d c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7-m/crtn.o
 OUTPUT(103_LED_Project.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x1e73
- .debug_info    0x00000000      0x497 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
- .debug_info    0x00000497      0x2c7 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
- .debug_info    0x0000075e      0x3bb STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
- .debug_info    0x00000b19      0x1fd STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
- .debug_info    0x00000d16      0x65c STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
- .debug_info    0x00001372      0x1ee STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
- .debug_info    0x00001560      0x3d8 src\main.o
- .debug_info    0x00001938       0x94 src\startup_stm32f10x_md.o
- .debug_info    0x000019cc      0x4a7 src\system_stm32f10x.o
+.debug_info     0x00000000     0x18ca
+ .debug_info    0x00000000      0x350 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+ .debug_info    0x00000350      0x3bb STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+ .debug_info    0x0000070b      0x1fd STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+ .debug_info    0x00000908      0x68e STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+ .debug_info    0x00000f96      0x1ee STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .debug_info    0x00001184      0x20b src\main.o
+ .debug_info    0x0000138f       0x94 src\startup_stm32f10x_md.o
+ .debug_info    0x00001423      0x4a7 src\system_stm32f10x.o
 
-.debug_abbrev   0x00000000      0x9a2
- .debug_abbrev  0x00000000      0x14f STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
- .debug_abbrev  0x0000014f       0xe9 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
- .debug_abbrev  0x00000238      0x148 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
- .debug_abbrev  0x00000380      0x103 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
- .debug_abbrev  0x00000483      0x172 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
- .debug_abbrev  0x000005f5      0x11d STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
- .debug_abbrev  0x00000712      0x110 src\main.o
- .debug_abbrev  0x00000822       0x12 src\startup_stm32f10x_md.o
- .debug_abbrev  0x00000834      0x16e src\system_stm32f10x.o
+.debug_abbrev   0x00000000      0x853
+ .debug_abbrev  0x00000000       0xeb STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+ .debug_abbrev  0x000000eb      0x148 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+ .debug_abbrev  0x00000233      0x103 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+ .debug_abbrev  0x00000336      0x172 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+ .debug_abbrev  0x000004a8      0x11d STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .debug_abbrev  0x000005c5      0x10e src\main.o
+ .debug_abbrev  0x000006d3       0x12 src\startup_stm32f10x_md.o
+ .debug_abbrev  0x000006e5      0x16e src\system_stm32f10x.o
 
-.debug_aranges  0x00000000      0x1e0
+.debug_aranges  0x00000000      0x1d0
  .debug_aranges
-                0x00000000       0x58 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+                0x00000000       0x50 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
  .debug_aranges
-                0x00000058       0x18 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
+                0x00000050       0x48 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
  .debug_aranges
-                0x00000070       0x48 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+                0x00000098       0x20 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
  .debug_aranges
-                0x000000b8       0x20 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+                0x000000b8       0x40 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
  .debug_aranges
-                0x000000d8       0x38 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                0x000000f8       0x50 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
  .debug_aranges
-                0x00000110       0x50 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+                0x00000148       0x28 src\main.o
  .debug_aranges
-                0x00000160       0x20 src\main.o
+                0x00000170       0x28 src\startup_stm32f10x_md.o
  .debug_aranges
-                0x00000180       0x28 src\startup_stm32f10x_md.o
- .debug_aranges
-                0x000001a8       0x38 src\system_stm32f10x.o
+                0x00000198       0x38 src\system_stm32f10x.o
 
-.debug_ranges   0x00000000      0x150
- .debug_ranges  0x00000000       0x48 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
- .debug_ranges  0x00000048       0x38 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
- .debug_ranges  0x00000080       0x10 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
- .debug_ranges  0x00000090       0x28 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+.debug_ranges   0x00000000      0x158
+ .debug_ranges  0x00000000       0x40 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+ .debug_ranges  0x00000040       0x38 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+ .debug_ranges  0x00000078       0x10 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+ .debug_ranges  0x00000088       0x30 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
  .debug_ranges  0x000000b8       0x40 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
- .debug_ranges  0x000000f8       0x10 src\main.o
- .debug_ranges  0x00000108       0x20 src\startup_stm32f10x_md.o
- .debug_ranges  0x00000128       0x28 src\system_stm32f10x.o
+ .debug_ranges  0x000000f8       0x18 src\main.o
+ .debug_ranges  0x00000110       0x20 src\startup_stm32f10x_md.o
+ .debug_ranges  0x00000130       0x28 src\system_stm32f10x.o
 
-.debug_line     0x00000000     0x11f1
- .debug_line    0x00000000      0x2c4 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
- .debug_line    0x000002c4      0x1c3 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
- .debug_line    0x00000487      0x26f STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
- .debug_line    0x000006f6      0x1d6 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
- .debug_line    0x000008cc      0x212 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
- .debug_line    0x00000ade      0x232 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
- .debug_line    0x00000d10      0x21f src\main.o
- .debug_line    0x00000f2f       0x7c src\startup_stm32f10x_md.o
- .debug_line    0x00000fab      0x246 src\system_stm32f10x.o
+.debug_line     0x00000000      0xfa2
+ .debug_line    0x00000000      0x259 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+ .debug_line    0x00000259      0x26f STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+ .debug_line    0x000004c8      0x1d6 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+ .debug_line    0x0000069e      0x226 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+ .debug_line    0x000008c4      0x232 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .debug_line    0x00000af6      0x1ea src\main.o
+ .debug_line    0x00000ce0       0x7c src\startup_stm32f10x_md.o
+ .debug_line    0x00000d5c      0x246 src\system_stm32f10x.o
 
-.debug_str      0x00000000      0xd49
- .debug_str     0x00000000      0x40d STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                                0x463 (size before relaxing)
- .debug_str     0x0000040d       0x44 STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
-                                0x347 (size before relaxing)
- .debug_str     0x00000451      0x158 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+.debug_str      0x00000000      0xc93
+ .debug_str     0x00000000      0x36b STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                                0x3b8 (size before relaxing)
+ .debug_str     0x0000036b      0x170 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
                                 0x390 (size before relaxing)
- .debug_str     0x000005a9       0x63 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+ .debug_str     0x000004db       0x63 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
                                 0x2b1 (size before relaxing)
- .debug_str     0x0000060c      0x554 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
-                                0x73e (size before relaxing)
- .debug_str     0x00000b60      0x104 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .debug_str     0x0000053e      0x569 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                                0x75d (size before relaxing)
+ .debug_str     0x00000aa7      0x104 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
                                 0x300 (size before relaxing)
- .debug_str     0x00000c64       0x2b src\main.o
-                                0x3b6 (size before relaxing)
- .debug_str     0x00000c8f       0xba src\system_stm32f10x.o
+ .debug_str     0x00000bab       0x2e src\main.o
+                                0x28e (size before relaxing)
+ .debug_str     0x00000bd9       0xba src\system_stm32f10x.o
                                 0x348 (size before relaxing)
 
 .comment        0x00000000       0x7c
- .comment       0x00000000       0x7c STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
+ .comment       0x00000000       0x7c STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
                                  0x7d (size before relaxing)
- .comment       0x0000007c       0x7d STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
  .comment       0x0000007c       0x7d STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
  .comment       0x0000007c       0x7d STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
  .comment       0x0000007c       0x7d STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
@@ -2705,15 +2711,15 @@ OUTPUT(103_LED_Project.elf elf32-littlearm)
  .comment       0x0000007c       0x7d src\main.o
  .comment       0x0000007c       0x7d src\system_stm32f10x.o
 
-.debug_frame    0x00000000      0x524
- .debug_frame   0x00000000      0x14c STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
- .debug_frame   0x0000014c      0x108 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
- .debug_frame   0x00000254       0x30 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
- .debug_frame   0x00000284       0xac STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
- .debug_frame   0x00000330      0x104 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
- .debug_frame   0x00000434       0x2c src\main.o
- .debug_frame   0x00000460       0x98 src\system_stm32f10x.o
- .debug_frame   0x000004f8       0x2c c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
+.debug_frame    0x00000000      0x53c
+ .debug_frame   0x00000000      0x124 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+ .debug_frame   0x00000124      0x108 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver.o
+ .debug_frame   0x0000022c       0x30 STM32F103C8T6\DRIVERS\GPIO_DRIVER\GPIO_Driver_Cfg.o
+ .debug_frame   0x0000025c       0xd0 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+ .debug_frame   0x0000032c      0x104 STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+ .debug_frame   0x00000430       0x48 src\main.o
+ .debug_frame   0x00000478       0x98 src\system_stm32f10x.o
+ .debug_frame   0x00000510       0x2c c:/program files (x86)/atollic/truestudio for arm 8.1.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
 
 Cross Reference Table
 
@@ -2734,18 +2740,14 @@ ADC_DiscModeCmd                                   Libraries\STM32F10x_StdPeriph_
 ADC_Driver_ClearStatus                            STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
                                                   STM32F103C8T6\MODULES\HARDWARE_MODULES\BUTTON_MODULE\JOYSTICK_MODULE\JOYSTICK_Module.o
 ADC_Driver_GetSample                              STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                                                  src\main.o
                                                   STM32F103C8T6\MODULES\HARDWARE_MODULES\BUTTON_MODULE\JOYSTICK_MODULE\JOYSTICK_Module.o
 ADC_Driver_GetStatus                              STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                                                  src\main.o
                                                   STM32F103C8T6\MODULES\HARDWARE_MODULES\BUTTON_MODULE\JOYSTICK_MODULE\JOYSTICK_Module.o
 ADC_Driver_Init                                   STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                                                  src\main.o
 ADC_Driver_Off                                    STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
 ADC_Driver_On                                     STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
 ADC_Driver_Set_Prescale_Value                     STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
 ADC_Driver_StartSampling                          STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-                                                  src\main.o
                                                   STM32F103C8T6\MODULES\HARDWARE_MODULES\BUTTON_MODULE\JOYSTICK_MODULE\JOYSTICK_Module.o
 ADC_ExternalTrigConvCmd                           Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.o
 ADC_ExternalTrigInjectedConvCmd                   Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.o
@@ -2768,7 +2770,6 @@ ADC_RegularChannelConfig                          Libraries\STM32F10x_StdPeriph_
 ADC_ResetCalibration                              Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.o
 ADC_SETUP                                         STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver_Cfg.o
                                                   STM32F103C8T6\DRIVERS\ADC_DRIVER\ADC_Driver.o
-ADC_Sample                                        src\main.o
 ADC_SetInjectedOffset                             Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.o
 ADC_SoftwareStartConvCmd                          Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.o
 ADC_SoftwareStartInjectedConvCmd                  Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.o
@@ -2904,7 +2905,7 @@ DebugMon_Handler                                  src\startup_stm32f10x_md.o
 Default_Handler                                   src\startup_stm32f10x_md.o
 EXTI0_IRQHandler                                  src\startup_stm32f10x_md.o
 EXTI15_10_IRQHandler                              src\startup_stm32f10x_md.o
-EXTI1_IRQHandler                                  src\startup_stm32f10x_md.o
+EXTI1_IRQHandler                                  src\main.o
 EXTI2_IRQHandler                                  src\startup_stm32f10x_md.o
 EXTI3_IRQHandler                                  src\startup_stm32f10x_md.o
 EXTI4_IRQHandler                                  src\startup_stm32f10x_md.o
@@ -2913,12 +2914,16 @@ EXTI_ClearFlag                                    Libraries\STM32F10x_StdPeriph_
 EXTI_ClearITPendingBit                            Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.o
 EXTI_DeInit                                       Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.o
 EXTI_Driver_Clear_PendingInterrupt                STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                                                  src\main.o
 EXTI_Driver_Falling_Trigger_Clear                 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
 EXTI_Driver_Falling_Trigger_Select                STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
 EXTI_Driver_Generate_SWInterrupt                  STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                                                  src\main.o
 EXTI_Driver_Init                                  STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                                                  src\main.o
 EXTI_Driver_Rising_Trigger_Clear                  STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
 EXTI_Driver_Rising_Trigger_Select                 STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
+                                                  src\main.o
 EXTI_GenerateSWInterrupt                          Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.o
 EXTI_GetFlagStatus                                Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.o
 EXTI_GetITStatus                                  Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.o
@@ -3114,7 +3119,10 @@ NOKIA_5110_Driver_SetXYcoordinates                STM32F103C8T6\MODULES\HARDWARE
 NVIC_Driver_ClearInterrupt                        STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
 NVIC_Driver_PriorityGroupConfig                   STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
                                                   STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
+                                                  STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
 NVIC_Driver_SetInterrupt                          STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+NVIC_Driver_Set_EXTI_Interrupt                    STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
+                                                  STM32F103C8T6\DRIVERS\EXTI_DRIVER\EXTI_Driver.o
 NVIC_Driver_Set_SYSTICK_Interrupt                 STM32F103C8T6\DRIVERS\NVIC_DRIVER\NVIC_Driver.o
                                                   STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
 NVIC_Init                                         Libraries\STM32F10x_StdPeriph_Driver\src\misc.o
@@ -3293,6 +3301,9 @@ SPI_SSOutputCmd                                   Libraries\STM32F10x_StdPeriph_
 SPI_StructInit                                    Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.o
 SPI_TransmitCRC                                   Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.o
 SVC_Handler                                       src\startup_stm32f10x_md.o
+SYSTEM_Driver_Enter_Sleep_Mode                    STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+SYSTEM_Driver_Enter_Standby_Mode                  STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
+SYSTEM_Driver_Enter_Stop_Mode                     STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
 SYSTEM_Driver_Set_System_Clock                    STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
 SYSTEM_Driver_Software_Reset                      STM32F103C8T6\DRIVERS\SYSTEM_DRIVER\SYSTEM_Driver.o
 SYSTICK_Driver_Delay_ms                           STM32F103C8T6\DRIVERS\SYSTICK_DRIVER\SYSTICK_Driver.o
@@ -3530,6 +3541,7 @@ _init                                             c:/program files (x86)/atollic
 _sbss                                             src\startup_stm32f10x_md.o
 _sdata                                            src\startup_stm32f10x_md.o
 _sidata                                           src\startup_stm32f10x_md.o
+daCounter                                         src\main.o
 g_pfnVectors                                      src\startup_stm32f10x_md.o
 main                                              src\main.o
                                                   src\startup_stm32f10x_md.o

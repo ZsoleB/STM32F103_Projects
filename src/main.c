@@ -1,8 +1,14 @@
 #include "SYSTICK_Driver_Cfg.h"
 #include "GPIO_Driver_Cfg.h"
-#include "ADC_Driver_Cfg.h"
+#include "EXTI_Driver_Cfg.h"
 
-uint16 ADC_Sample = 0x00;
+uint8 daCounter = 0x00;
+
+void EXTI1_IRQHandler()
+{
+	daCounter++;
+	EXTI_Driver_Clear_PendingInterrupt(EXTI_DRIVER_INTERRUPT_PIN_1);
+}
 
 int main()
 {
@@ -10,14 +16,15 @@ int main()
 	SYSTICK_Driver_Start();
 
 	GPIO_Driver_Init();
-	ADC_Driver_Init();
+	EXTI_Driver_Init(EXTI_DRIVER_INTERRUPT_PIN_1,EXTI_DRIVER_INTERRUPT_PORT_A,EXTI_DRIVER_INTERRUPT_ACTION);
+	EXTI_Driver_Rising_Trigger_Select(EXTI_DRIVER_INTERRUPT_PIN_1);
 
 	while (1)
 	{
-		ADC_Driver_StartSampling(ADC_DRIVER_1);
-		if((ADC_Driver_GetStatus(ADC_DRIVER_1,ADC_DRIVER_REGULAR_CHANNEL_END_OF_CONVERSION_FLAG))==SUCCES)
+		daCounter++;
+		if(daCounter==0x07)
 		{
-			ADC_Sample = ADC_Driver_GetSample(ADC_DRIVER_1);
+			EXTI_Driver_Generate_SWInterrupt(EXTI_DRIVER_INTERRUPT_PIN_1);
 		}
 	}
 }

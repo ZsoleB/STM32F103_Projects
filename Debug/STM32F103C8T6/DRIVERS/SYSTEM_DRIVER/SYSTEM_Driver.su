@@ -1,2 +1,5 @@
 SYSTEM_Driver.c:10:6:SYSTEM_Driver_Software_Reset	16	static
 SYSTEM_Driver.c:23:6:SYSTEM_Driver_Set_System_Clock	16	static
+SYSTEM_Driver.c:166:6:SYSTEM_Driver_Enter_Sleep_Mode	4	static
+SYSTEM_Driver.c:171:6:SYSTEM_Driver_Enter_Stop_Mode	4	static
+SYSTEM_Driver.c:176:6:SYSTEM_Driver_Enter_Standby_Mode	4	static
