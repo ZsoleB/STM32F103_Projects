@@ -44,6 +44,8 @@ void SYSTICK_Driver_Init()
 	SysTick->VAL = 0x00;
 	/*Set the load register with the configured value*/
 	SysTick->LOAD = ((SYSTICK_DRIVER_LOAD & 0xFFFFFFUL)-1);
+
+	SYSTICK_Driver_Start();
 }
 
 void SYSTICK_Driver_Start()
