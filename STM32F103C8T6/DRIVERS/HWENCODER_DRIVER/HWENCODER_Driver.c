@@ -4,34 +4,58 @@
  *  Created on: 19 feb. 2018
  *      Author: Zsole
  */
-#include "HWENCODER_Driver.h"
 #include "HWENCODER_Driver_Cfg.h"
 
-void HWENCODER_Driver_Init(TIM_TypeDef* TIMx)
+void HWENCODER_Driver_Init()
 {
-	#if (HWENCODER_DRIVER_SELECTED_TIMER_INPUT==HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1)
+	uint16 index = 0x00;
 
-		TIMx->SMCR|=HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1;
+	for(index=0x00;index<HWENCODER_DRIVER_INSTANCE_NUM;index++)
+	{
+		if (HWENCODER_SETUP[index].HWENCODER_Driver_selected_timer_input == HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1)
+		{
 
-	#elif(HWENCODER_DRIVER_SELECTED_TIMER_INPUT==HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_2)
+			HWENCODER_SETUP[index].Timer_Source->SMCR |= HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1;
+		}
+		else if (HWENCODER_SETUP[index].HWENCODER_Driver_selected_timer_input == HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_2)
+		{
 
-		TIMx->SMCR|=HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_2;
+			HWENCODER_SETUP[index].Timer_Source->SMCR |= HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_2;
+		}
 
-	#elif(HWENCODER_DRIVER_SELECTED_TIMER_INPUT==HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1_AND_2)
+		else if (HWENCODER_SETUP[index].HWENCODER_Driver_selected_timer_input == HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1_AND_2)
+		{
 
-		TIMx->SMCR|=HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1_AND_2;
+			HWENCODER_SETUP[index].Timer_Source->SMCR |= HWENCODER_DRIVER_COUNT_ON_TIMER_INPUT_1_AND_2;
+		}
 
-	#endif
+		else
+		{
+			/*Nothing to do*/
+		}
 
-		TIMx->CCMR1|=(0x01<<8)|(0x01);
-		TIMx->CCER|=(uint16)( 0x01|
-					(uint16)((0x01)<<4));
-		TIMx->CNT =(MAX16-1);
 
+		if (HWENCODER_SETUP[index].HWENCODER_Driver_Channel_pair == HWENCODER_DRIVER_CHANNEL_1_AND_2)
+		{
+			HWENCODER_SETUP[index].Timer_Source->CCMR1 |= HWENCODER_SETUP[index].HWENCODER_Driver_Capture_Compare_selection_primary
+					| HWENCODER_SETUP[index].HWENCODER_Driver_Capture_Compare_selection_secondary;
+		}
+		else if (HWENCODER_SETUP[index].HWENCODER_Driver_Channel_pair == HWENCODER_DRIVER_CHANNEL_3_AND_4)
+		{
+			HWENCODER_SETUP[index].Timer_Source->CCMR2 |= HWENCODER_SETUP[index].HWENCODER_Driver_Capture_Compare_selection_primary
+					| HWENCODER_SETUP[index].HWENCODER_Driver_Capture_Compare_selection_secondary;
+		}
+		else
+		{
+			/*Nothing to do*/
+		}
+		HWENCODER_SETUP[index].Timer_Source->CCER |= HWENCODER_SETUP[index].HWENCODER_Driver_Capture_Compare_outputs;
+		HWENCODER_SETUP[index].Timer_Source->CNT = (MAX16 - 1);
+	}
 }
-uint32 HWENCODER_Driver_Get_Count_Value(TIM_TypeDef* TIMx)
+uint32 HWENCODER_Driver_Get_Count_Value(uint8 HWENCODER_setup_nr)
 {
-	return (uint32)(TIMx->CNT);
+	return (uint32) (HWENCODER_SETUP[HWENCODER_setup_nr].Timer_Source->CNT);
 }
 
 
