@@ -1,18 +1,25 @@
+#include "SYSTEM_Driver_Cfg.h"
 #include "SYSTICK_Driver_Cfg.h"
 #include "GPIO_Driver_Cfg.h"
-#include "HWENCODER_Driver_Cfg.h"
-
-uint32 dummy_value = 0x00;
 
 int main()
 {
 	SYSTICK_Driver_Init();
 	GPIO_Driver_Init();
-	TCNT_Driver_Init();
-	HWENCODER_Driver_Init();
-	TCNT_Driver_Start(TCNT_DRIVER_TIM4);
+	SYSTEM_Driver_PVD_Init();
+
 	while (1)
 	{
-		dummy_value = HWENCODER_Driver_Get_Count_Value(HWENCODER_DRIVER_1);
+		if ((SYSTEM_Driver_PVD_Get_Power_Status())==SUCCES)
+		{
+			GPIO_Driver_SetPin(GPIO_DRIVER_PORTA, GPIO_DRIVER_PORTA_PIN3);
+		}
+		else
+		{
+			GPIO_Driver_SetPin(GPIO_DRIVER_PORTA, GPIO_DRIVER_PORTA_PIN3);
+			SYSTICK_Driver_Delay_ms(200);
+			GPIO_Driver_ClearPin(GPIO_DRIVER_PORTA, GPIO_DRIVER_PORTA_PIN3);
+			SYSTICK_Driver_Delay_ms(200);
+		}
 	}
 }
