@@ -17,7 +17,14 @@ void SYSTEM_Driver_Software_Reset()
 
 	New_register_value = (Old_register_value) | (SYSTEM_DRIVER_AIRCR_VECTORKEY_MASK) | (0x01 << 0x02);
 
+	/* Ensure completion of memory access, with Data Synchronization Barrier asm instruction */
+	__DSB();
+
+	/* Request the software reset*/
 	SCB->AIRCR = New_register_value;
+
+	/* Ensure completion of memory access*/
+	__DSB();
 }
 
 void SYSTEM_Driver_Set_System_Clock()

@@ -83,9 +83,13 @@ void EXTI_Driver_Init(uint8 InterruptPinNumber, uint8 InterruptPortNumber, uint8
 		}
 	}
 
-#if(EXTI_DRIVER_INTERRUPT_MODE==OK)
+#if(EXTI_DRIVER_INTERRUPT_MODE == OK)
 	NVIC_Driver_PriorityGroupConfig(NVIC_DRIVER_PRIORITY_GRUP_3);
 	NVIC_Driver_Set_EXTI_Interrupt(((uint8) 0x01), ((uint8) 0x01));
+#elif(EXTI_DRIVER_EVENT_MODE == OK)
+	/*Nothing to do*/
+#else
+	"The selected EXTI_DRIVER_MODE is not correct, choose one from the available ones !"
 #endif
 }
 
