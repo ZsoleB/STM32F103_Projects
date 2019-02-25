@@ -42,14 +42,14 @@ void SYSTEM_Driver_Set_System_Clock()
 
 	if ((RCC->CR & SYSTEM_DRIVER_HSE_CLOCK_READY) != NOK)
 	{
-		HSEStatus = (uint32_t) 0x01;
+		HSEStatus = (uint32) 0x01;
 	}
 	else
 	{
-		HSEStatus = (uint32_t) 0x00;
+		HSEStatus = (uint32) 0x00;
 	}
 
-	if (HSEStatus == (uint32_t) 0x01)
+	if (HSEStatus == (uint32) 0x01)
 	{
 		/* Enable HSI */
 		RCC->CR |= SYSTEM_DRIVER_HSI_ON;
@@ -59,25 +59,25 @@ void SYSTEM_Driver_Set_System_Clock()
 		}
 
 		/* Select HSI as system clock source */
-		RCC->CFGR &= (uint32_t) ((uint32_t) ~(0x03));
-		RCC->CFGR |= (uint32_t) SYSTEM_DRIVER_SWITCH_TO_HSI;
+		RCC->CFGR &= (uint32) ((uint32) ~(0x03));
+		RCC->CFGR |= (uint32) SYSTEM_DRIVER_SWITCH_TO_HSI;
 
 		/* Clear AHB,APB1 and APB2 prescalers*/
-		RCC->CFGR &= (uint32_t) (~((0x0F) << 0x04));
-		RCC->CFGR &= (uint32_t) (~((0x07) << 0x08));
-		RCC->CFGR &= (uint32_t) (~((0x07) << 0x0B));
+		RCC->CFGR &= (uint32) (~((0x0F) << 0x04));
+		RCC->CFGR &= (uint32) (~((0x07) << 0x08));
+		RCC->CFGR &= (uint32) (~((0x07) << 0x0B));
 
 		/* Disable PLL */
 		RCC->CR &= SYSTEM_DRIVER_PLL_OFF;
 
 		/* HCLK = SYSCLK */
-		RCC->CFGR |= (uint32_t) SYSTEM_DRIVER_HCLK_DIV;
+		RCC->CFGR |= (uint32) SYSTEM_DRIVER_HCLK_DIV;
 
 		/* PCLK1 = HCLK */
-		RCC->CFGR |= (uint32_t) SYSTEM_DRIVER_PCLK1_DIV;
+		RCC->CFGR |= (uint32) SYSTEM_DRIVER_PCLK1_DIV;
 
 		/* PCLK2 = HCLK */
-		RCC->CFGR |= (uint32_t) SYSTEM_DRIVER_PCLK2_DIV;
+		RCC->CFGR |= (uint32) SYSTEM_DRIVER_PCLK2_DIV;
 
 		/*  PLL configuration: PLLCLK = HSE * 9 = 72 MHz */
 		RCC->CFGR &= (uint32) ((uint32) (~((uint32) ((0x0F << 0x12) | (0x01 << 0x10)))));
@@ -92,27 +92,35 @@ void SYSTEM_Driver_Set_System_Clock()
 		}
 
 #if(SYSTEM_DRIVER_CLK_SOURCE == SYSTEM_DRIVER_SWITCH_TO_HSI)
-		/* Select configured clock source */
-		RCC->CFGR |= (uint32_t)SYSTEM_DRIVER_CLK_SOURCE;
 
-		/* Wait till PLL is used as system clock source */
-		while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS) != 0x00)
-		{}
+		/* Select configured clock source */
+		RCC->CFGR &= (~(0x03));
+		RCC->CFGR |= SYSTEM_DRIVER_CLK_SOURCE;
+
+		/* Wait till HSI is used as system clock source */
+		while ((RCC->CFGR & 0x0C) != 0x00)
+		{
+		}
 
 #elif(SYSTEM_DRIVER_CLK_SOURCE == SYSTEM_DRIVER_SWITCH_TO_HSE)
-		/* Select configured clock source */
-		RCC->CFGR |= (uint32_t)SYSTEM_DRIVER_CLK_SOURCE;
 
-		/* Wait till PLL is used as system clock source */
-		while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS) != 0x04)
-		{}
+		/* Select configured clock source */
+		RCC->CFGR &= (~(0x03));
+		RCC->CFGR |= SYSTEM_DRIVER_CLK_SOURCE;
+
+		/* Wait till HSE is used as system clock source */
+		while ((RCC->CFGR & 0x0C) != 0x04)
+		{
+		}
 
 #elif(SYSTEM_DRIVER_CLK_SOURCE == SYSTEM_DRIVER_SWITCH_TO_PLL)
+
 		/* Select configured clock source */
-		RCC->CFGR |= (uint32_t) SYSTEM_DRIVER_CLK_SOURCE;
+		RCC->CFGR &= (~(0x03));
+		RCC->CFGR |= SYSTEM_DRIVER_CLK_SOURCE;
 
 		/* Wait till PLL is used as system clock source */
-		while ((RCC->CFGR & (uint32_t) RCC_CFGR_SWS) != 0x08)
+		while ((RCC->CFGR & 0x0C) != 0x08)
 		{
 		}
 #endif
