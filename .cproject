@@ -61,6 +61,7 @@
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/FLASH_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
 								</option>
 								<inputType id="com.atollic.truestudio.as.input.651518023" name="Input" superClass="com.atollic.truestudio.as.input"/>
 							</tool>
@@ -87,6 +88,7 @@
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWCRC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWENCODER_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/PWM_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/RTC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SPI_DRIVER"/>
@@ -101,7 +103,6 @@
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/SEVEN_SEGMENT_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE/JOYSTICK_MODULE"/>
-									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/SHIFT_REGISTER_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
 								</option>
@@ -189,6 +190,7 @@
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWCRC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/HWENCODER_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/PWM_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/RTC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/SPI_DRIVER"/>
@@ -203,7 +205,6 @@
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/LED_MODULE/SEVEN_SEGMENT_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/BUTTON_MODULE/JOYSTICK_MODULE"/>
-									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/SHIFT_REGISTER_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
 								</option>
@@ -285,6 +286,7 @@
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/FLASH_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
 								</option>
 								<inputType id="com.atollic.truestudio.as.input.491654717" name="Input" superClass="com.atollic.truestudio.as.input"/>
 							</tool>
@@ -324,6 +326,7 @@
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/MODULES/HARDWARE_MODULES/RADIO_MODULE/RFID_MODULE"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/LIN_DRIVER"/>
 									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/FLASH_DRIVER"/>
+									<listOptionValue builtIn="false" value="../STM32F103C8T6/DRIVERS/NVIC_DRIVER"/>
 								</option>
 								<option id="com.atollic.truestudio.common_options.target.endianess.42657192" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
 								<option id="com.atollic.truestudio.common_options.target.mcpu.1998652506" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32F103C8" valueType="enumerated"/>

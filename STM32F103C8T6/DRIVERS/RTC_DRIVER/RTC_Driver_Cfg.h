@@ -10,8 +10,9 @@
 
 #include "RTC_Driver.h"
 
-#define RTC_DRIVER_CLK_SOURCE								RTC_DRIVER_LSE_CLK
-#define RTC_DRIVER_USE_LSE									OK
+#define RTC_DRIVER_CLK_SOURCE								RTC_DRIVER_HSE_CLK
+#define RTC_DRIVER_USE_LSE									NOK
+#define RTC_DRIVER_USE_HSE									OK
 #define RTC_DRIVER_INTERRUPT_ENABLE							NOK
 
 #if(RTC_DRIVER_INTERRUPT_ENABLE == OK)

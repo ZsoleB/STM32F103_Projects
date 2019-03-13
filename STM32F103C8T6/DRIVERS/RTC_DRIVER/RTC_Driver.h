@@ -11,13 +11,14 @@
 #include "stm32f10x.h"
 #include "StdTypes.h"
 
-#define RTC_DRIVER_ENABLE										(0x01<<0x0F);
-#define RTC_DRIVER_DISABLE										(~(0x01<<0x0F));
-#define RTC_DRIVER_NO_CLK										(~(0x03<<0x08));
-#define RTC_DRIVER_LSE_CLK										(0x01<<0x08);
-#define RTC_DRIVER_LSI_CLK										(0x02<<0x08);
+#define RTC_DRIVER_RESET_BAKUP_DOMAIN							(0x01<<0x10)
+#define RTC_DRIVER_ENABLE										(0x01<<0x0F)
+#define RTC_DRIVER_DISABLE										(~(0x01<<0x0F))
+#define RTC_DRIVER_NO_CLK										(~(0x03<<0x08))
+#define RTC_DRIVER_LSE_CLK										(0x01<<0x08)
+#define RTC_DRIVER_LSI_CLK										(0x02<<0x08)
 /*The HSE clock is divided by 128 internally*/
-#define RTC_DRIVER_HSE_CLK										(0x03<<0x08);
+#define RTC_DRIVER_HSE_CLK										(0x03<<0x08)
 #define RTC_DRIVER_LSE_CLK_ON									(0x01)
 #define RTC_DRIVER_LSE_CLK_OFF									(0x00)
 #define RTC_DRIVER_LSE_CLOCK_READY								((0x01)<<0x01)

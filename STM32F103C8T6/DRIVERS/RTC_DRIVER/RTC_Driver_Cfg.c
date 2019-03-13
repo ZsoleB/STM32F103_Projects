@@ -12,7 +12,17 @@ volatile static uint8 counter = 0x00;
 
 void RTC_Driver_Callback_Function()
 {
+	static uint8 state = 0x00;
 
+	if ((state % 2) == 0x00)
+	{
+		GPIO_Driver_SetPin(GPIO_DRIVER_PORTA,GPIO_DRIVER_PORTA_PIN1);
+	}
+	else
+	{
+		GPIO_Driver_ClearPin(GPIO_DRIVER_PORTA,GPIO_DRIVER_PORTA_PIN1);
+	}
+	state++;
 }
 
 
