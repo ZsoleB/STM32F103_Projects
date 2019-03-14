@@ -59,6 +59,12 @@ void RTC_Driver_Init()
 	RTC->CRL |= (0x01<<0x04);
 	while((RTC->CRL & 0x20) == NOK){}
 
+	/*Clear registers Synchronized Flag*/
+    RTC->CRL &= ~RTC_DRIVER_REGISTERS_SYNCHRONIZED_FLAG;
+
+    /*Wait for the RSF bit in RTC_CRL to be set by hardware*/
+    while((RTC->CRL & RTC_DRIVER_REGISTERS_SYNCHRONIZED_FLAG) == NOK){}
+
 	/*3. Write to one or more RTC registers*/
 #if(RTC_DRIVER_CLK_SOURCE == RTC_DRIVER_HSE_CLK)
 	RTC->PRLL |= (0xF423);
